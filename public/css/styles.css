@@ -19,29 +19,58 @@
     padding-top: 15px;
     font-size: 10px;
 }
-
 a.nav-link {
     color: black;
     font-weight: 500;
     font-size: 17px;
 }
+a.nav-link:hover {
+    color: #198754;
+}
+.dropdown {
+    position: relative;
+    margin: 5px;
+}
 .book a {
+    box-shadow: 0px 9px 16px 0px #999;
     color: white;
     text-align: center;
     font-weight: 500;
     text-decoration: none;
     background-color: #00ac4f;
-    padding: 12px;
+    padding: 15px;
     border-radius: 15px;
 }
-.book {
-    margin-top: 65px;
+.book a:hover{
+    color: black;
+}
+.book{
+    display: block;
+    padding-left: 9px;
+}
+.navbar-light .navbar-brand{
+    font-size: 16px;
+}
+button#dropdownMenu2 {
+    font-size: 16px;
+    background: white;
+    color: #009247;
+    border: none;
 }
 /* Slide show */
 .carousel-inner img{
     width: 100%;
     height: 600px;
-    
+}
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    text-align: center;
+    width: 10px;
+    background-color: #009247;
+    padding: 10px;
+    border-radius: 50%;
 }
 /* welcom */
 
@@ -88,6 +117,13 @@ a.nav-link {
     color: white;
     padding: 10px;
     margin: 0 50px;
+}
+.more a{
+    text-decoration: none;
+    color: white;
+}
+.more a:hover{
+    color: black;
 }
 .care p{
     color: #6A6969;
@@ -170,6 +206,10 @@ footer li{
     font-size: 20px;
     display: flex;
 }
+.footer-service a{
+    text-decoration: none;
+    color: white;
+}
 .follow {
     background-color: #1bb462;
 }
@@ -225,6 +265,13 @@ input.form-control {
     margin-left: -145px;
     margin-right: 145px;
     text-align: center;
+}
+.picture-all a:hover, .footer-service li:hover, .footer-service  a:hover{
+    color: black;
+}
+.picture-all a{
+    text-decoration: none;
+    color: white;
 }
 /* news-content */
 .news-contents {
@@ -339,4 +386,14 @@ input.form-control {
 }
 .doctor-1 p{
     line-height: 13px;
+}
+/* }move-top */
+.move{
+    position: fixed;
+    right: 25px;
+    top: 80%;
+}
+.move img{
+    width: 60px;
+    height: 50px;
 }
