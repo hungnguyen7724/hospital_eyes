@@ -444,6 +444,12 @@ input.form-control {
         .right-content1{
             display: none;
         }
+        .more{
+        background-color: #009247;
+        color: white;
+        margin: 225px 0 15px;
+        }
+        
     }
 @media only screen and (min-width: 992px) {
     .header-img{
@@ -526,6 +532,16 @@ input.form-control {
     #couple-doctor{
         display: none;
     } 
+    .eye-service h2{
+        font-size: 10px;
+    }
+    .eyes p {
+        color: black;
+        font-size: 15px;
+        text-align: center;
+        height: 125px;
+        margin: 0 10px;
+    }
 }
 @media only screen and (max-width:441px){
     .body{
