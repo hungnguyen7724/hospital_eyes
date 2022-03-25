@@ -76,6 +76,7 @@ button#dropdownMenu2 {
     background: #f5f8fa;
 }
 .care{
+    padding-bottom: 20px;
     padding-top: 40px;
     text-align: center;
 }
@@ -276,7 +277,7 @@ input.form-control {
 
 .news-contents a {
     background: white;
-    padding:30px 8px;
+    padding:10px 30px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -288,7 +289,7 @@ input.form-control {
 }
 .text-news p {
     background: white;
-    padding: 20px 10px;
+    padding: 30px;
     color: #333;
     font-size: 17px;
     font-weight: 500;
@@ -394,6 +395,7 @@ input.form-control {
     width: 60px;
     height: 50px;
 }
+
 /* Reponsive */
 @media only screen and (max-width: 991px) {
         .header-img{
@@ -430,11 +432,16 @@ input.form-control {
             padding: 21px;
             text-align: center;
         }
-        .news-contents a{
-            font-size: 15px;
-        }
+
         .text-news p{
-            font-size: 12px;
+            background: white;
+            padding: 15px;
+            color: #333;
+            font-size: 8px;
+            font-weight: 500;
+        }
+        .news-contents a{
+            font-size: 10px;
         }
         .more {
             background-color: #009247;
@@ -470,7 +477,6 @@ input.form-control {
         font-size: 14px;
         color: rgba(0,0,0,.9);
     }
-    
 }
 @media only screen and (max-width: 1780px) {
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -502,7 +508,6 @@ input.form-control {
         text-align: center;
         width: 500px;
     }
-    
 }
 @media only screen and (max-width:1280px){
     .top-header{
@@ -542,6 +547,20 @@ input.form-control {
         height: 125px;
         margin: 0 10px;
     }
+    .care h2 {
+        font-size: 20px;
+    }
+    .footer-content{
+        font-size: 15px;
+    }
+    .footer-content h3{
+        font-size: 20px;
+    }
+    .footer-img {
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 @media only screen and (max-width:441px){
     .body{
@@ -580,5 +599,8 @@ input.form-control {
             display: flex;
             flex-direction: column-reverse;
     }
-   
+    .news1{
+        display: flex;
+        flex-direction: column-reverse;
+        }
 }
