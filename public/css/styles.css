@@ -16,16 +16,20 @@
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     padding-top: 13px;
-    font-size: 17px;
-    color: rgba(0,0,0,.9);
+    font-size: 18px;
 }
 .dropdown {
     position: relative;
     margin: 5px;
 } 
-.header-img {
-    width: 200px;
+.header-img img {
+    width: 170px;
     height: auto;
+}
+.calendar {
+    position: relative;
+    top: 45px;
+    right: 0;
 }
 .calendar a{
     box-shadow: 0px 9px 16px 0px #999;
@@ -35,10 +39,10 @@
     text-decoration: none;
     background-color: #198754;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
 }
 .navbar-light .navbar-nav .nav-link {
-    font-size: 17px;
+    font-size: 16px;
 }
 button#dropdownMenu2 {
     font-size: 16px;
@@ -60,6 +64,12 @@ button#dropdownMenu2 {
     background-color: #009247;
     padding: 10px;
     border-radius: 50%;
+}
+.collapse .navbar-collapse{
+    padding-left: 15px;
+}
+.navbar-nav{
+    padding-left: 85px;
 }
 /* welcom */
 
@@ -397,67 +407,101 @@ input.form-control {
 }
 
 /* Reponsive */
-@media only screen and (max-width: 991px) {
-        .header-img{
-            position: relative;
-            left: 50%;
-            width: 500px;
-            height: auto;
-        }
-        .calendar a, .nav-link, .nav-link.active, .navbar-nav{
-            display: none;
-        }
-        .advise-free h2{
-            font-size: 35px;
-        }
-        .book-now a, .get-advise a {
-            padding: 2px;
-            font-size: 15px;
-        }
-        .advise-free p {
-            font-size: 17px;
-        }
-        .eye-disease h2 {
-            font-size: 13px;
-            font-weight: 700;
-            color: #0D9851;
-            text-align: center;
-        }
-        .more a{
-            font-size: 12px;
-        }
-        .doctor-1 {
-            background-color: #f8fdfa !important;
-            line-height: 12px;
-            padding: 21px;
-            text-align: center;
-        }
-
-        .text-news p{
-            background: white;
-            padding: 15px;
-            color: #333;
-            font-size: 8px;
-            font-weight: 500;
-        }
-        .news-contents a{
-            font-size: 10px;
-        }
-        .more {
-            background-color: #009247;
-            color: white;
-            margin: 145px 0 15px;
-        }
-        .right-content1{
-            display: none;
-        }
-        .more{
-        background-color: #009247;
-        color: white;
-        margin: 225px 0 15px;
-        }
-        
+@media only screen and (max-width: 1870px) {
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        padding-top: 13px;
+        font-size: 18px;
     }
+}
+@media only screen and (max-width:1730px){
+    .top-header{
+        padding-left: 30px;
+    }
+}
+@media only screen and (max-width:1700px){
+    .navbar-nav{
+        padding-left: 55px;
+       }
+}
+@media only screen and (max-width:1280px){
+    .top-header{
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width:1670px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1600px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+    .header-img img {
+        width: 145px;
+        height: auto;
+    }
+    .calendar {
+        position: relative;
+        top: 40px;
+    }
+}
+@media only screen and (max-width:1530px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+    .calendar a{
+        font-size: 11px;
+    }
+    .navbar-nav{
+        padding-left: 35px;
+       }
+    .top-header{
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width: 1490px){
+    .calendar a{
+      display: none;
+    }
+}
+@media only screen and (max-width: 1370px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 12px;
+    }.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        position: relative;
+        bottom: 5px;
+    }
+}
+@media only screen and (max-width: 1230px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 11px;
+    }.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        position: relative;
+        bottom: 5px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .header-img img {
+        width: 130px;
+        height: auto;
+    }
+    .navbar-nav {
+        padding-left: 15px;
+    }
+}
+@media only screen and (max-width:1175px) {
+    .navbar-expand-lg .navbar-nav {
+       display: none;
+    }
+   
+}    
 @media only screen and (min-width: 992px) {
     .header-img{
         width: 100px;
@@ -471,54 +515,74 @@ input.form-control {
     text-decoration: none;
     background-color: #198754;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     }
     .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        font-size: 14px;
-        color: rgba(0,0,0,.9);
+        font-size: 16px;
     }
 }
-@media only screen and (max-width: 1780px) {
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    padding-top: 10px;
-}
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 13px;
-    }
-}
-@media only screen and (max-width:1655px){
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 10px;
-    }
-}
-@media only screen and (min-width: 992px) and (max-width:1199px){
-    .calendar a{
-        font-size: 10px;
-    }
-    .navbar-light .navbar-nav .nav-link{
-        font-size: 8px
-    }
-    .eyes p{
-        font-size: 13px;
-    }
-    .ambulance-icon2{
-        display: none;
-    }
-    .top-header img{
-        text-align: center;
-        width: 500px;
-    }
-}
-@media only screen and (max-width:1280px){
-    .top-header{
-        padding-left: 0px;
-    }
-}
-@media only screen and (max-width:767px){
-    .header-img {
+@media only screen and (max-width: 991px) {
+    .header-img{
         position: relative;
         left: 50%;
+        width: 500px;
+        height: auto;
     }
+    .calendar a, .nav-link, .nav-link.active, .navbar-nav{
+        display: none;
+    }
+    .advise-free h2{
+        font-size: 35px;
+    }
+    .book-now a, .get-advise a {
+        padding: 2px;
+        font-size: 15px;
+    }
+    .advise-free p {
+        font-size: 17px;
+    }
+    .eye-disease h2 {
+        font-size: 13px;
+        font-weight: 700;
+        color: #0D9851;
+        text-align: center;
+    }
+    .more a{
+        font-size: 12px;
+    }
+    .doctor-1 {
+        background-color: #f8fdfa !important;
+        line-height: 12px;
+        padding: 21px;
+        text-align: center;
+    }
+
+    .text-news p{
+        background: white;
+        padding: 15px;
+        color: #333;
+        font-size: 8px;
+        font-weight: 500;
+    }
+    .news-contents a{
+        font-size: 10px;
+    }
+    .more {
+        background-color: #009247;
+        color: white;
+        margin: 145px 0 15px;
+    }
+    .right-content1{
+        display: none;
+    }
+    .more{
+    background-color: #009247;
+    color: white;
+    margin: 225px 0 15px;
+    }
+    
+}
+@media only screen and (max-width:767px){
     .image-gallery{
         display: none;
     }
