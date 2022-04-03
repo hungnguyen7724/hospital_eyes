@@ -1,0 +1,259 @@
+.menu-header, .footer-content, .img-link, .news1, .advise-1, .advise-free,.hospital-doctor,.top-header 
+, .all-doctor, .eyes
+{
+    display: flex;
+}
+.top-header {
+    padding-left: 50px;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    padding-top: 13px;
+    font-size: 17px;
+    color: rgba(0,0,0,.9);
+}
+.dropdown {
+    position: relative;
+    margin: 5px;
+} 
+.header-img img {
+    width: 170px;
+    height: auto;
+}
+.calendar a{
+    box-shadow: 0px 9px 16px 0px #999;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #198754;
+    font-weight: 500;
+    font-size: 12px;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+}
+button#dropdownMenu2 {
+    font-size: 16px;
+    background: white;
+    color: #009247;
+    border: none;
+}
+
+/*  */
+.text-gioithieuchung{
+    padding-top: 100px;
+    text-align: justify;
+}
+.noidung{
+    padding-bottom: 30px;
+    display: flex;
+}
+.link-right li a{
+    text-decoration: none;
+ position: relative;
+    display: block;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 500;
+}
+.link-right li a:hover{
+    color: #00ac4f;
+    border-left: 2px solid #00ac4f;
+
+}
+.link-right li{
+    list-style: none;
+}
+.link-right i{
+    position: relative;
+    float: right;
+    right: 20px;
+}
+.link-right {
+    margin: 0 40px;
+    box-shadow: 0px 9px 16px 0px #999;
+}
+.left-border a{
+    border-left: 2px solid gray;
+}
+.gioithieuchung h3, .su-menh h3, .gia-tri h3, .tam-nhin h3, .lich-su h3{
+    font-family: 'Asap', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gioithieuchung p, .su-menh p, .gia-tri p, .tam-nhin p, .lich-su p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.lich-su{
+    text-align: center;
+}
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    color: white;
+    padding-top: 100px;
+    background-color: #009247;
+}
+.footer-img {
+    padding-top: 30px;
+    display: flex;
+}
+.img-dmca {
+    float: right;
+    margin-top: 20px;
+}
+footer li{
+    list-style: none;
+    line-height: 30px;
+}
+.footer-content p {
+    line-height: 30px;
+}
+.footer-content h3{
+    padding-left: 30px;
+}
+.footer-follow {
+    padding: 50px 0 30px 0;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+.footer-service a{
+    text-decoration: none;
+    color: white;
+}
+.follow {
+    background-color: #1bb462;
+}
+input[type="submit"] {
+    border: none;
+    color: white    ;
+    font-weight: 500;
+    background-color: #3fa34d;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    padding: 5px;
+}
+input.form-control {
+    background: #f1f7fa;
+    color: #1f1f1f;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#website {
+    color: white;
+    text-decoration: none;
+}
+.footer-content{
+    display: flex;
+}
+.footer-service  a:hover{
+    color: black;
+}
+
+/* dichvu - khám mắt */
+.post.col-md-6{
+    box-shadow: 0px 9px 16px 0px #999;
+}
+.post.col-md-6:hover{
+    display: inline-grid;   
+    box-shadow: 0 1px 20px 0px #878787;
+}
+.post-content {
+    display: flex;
+    padding: 10px;
+}
+
+.post a{
+    font-weight: bold;
+    font-size: 17px;
+    color: #009247;
+    text-decoration: none;
+}
+.post p{
+    font-size: 16px;
+    color: #878787;
+    padding: 10px 0;
+    line-height: 25px;
+}
+.text-post {
+    padding: 20px 35px;
+}
+.xem-chi-tiet a{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.post {
+    grid-column-gap: 30px;
+}
+.post-content .post img{
+    width: 422px;
+    height: 228px;
+}
+
+.post-content .post{
+    margin: 10px;
+}
+.post col-md-6{
+    display: flex;
+}
+.post col-md-6 img{
+    width: 100%;
+    height: 200px;
+}
+.cross{
+    width: 100%;
+    height: 10px ;
+    background: white;
+}
+.note {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Các the khac*/
+#img-cuommat{
+    width: 420px;
+    height: 228px;
+}
+.page-more {
+    padding: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.page1 a, .page2 a, .page3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: #f2f2f2;
+    padding: 11px 18px;
+    border-radius: 5px;
+    margin-left: 40px;
+    color: black;
+}
+.feedback{
+    margin-top:-42px;
+}
+textarea#text-lienhe {
+    border-radius: 5px;
+}
+.form-lienhe {
+    padding-right: 20px;
+}
