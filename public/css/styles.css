@@ -6,6 +6,8 @@
     padding-top: 50px; 
  }    */
 
+
+
 .menu-header, .footer-content, .img-link, .news1, .advise-1, .advise-free,.hospital-doctor,.top-header 
 , .all-doctor, .eyes
 {
@@ -292,7 +294,7 @@ input.form-control {
     text-overflow: ellipsis;
     display: -webkit-box;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4;
     color: #00ac4f;
     text-decoration: none;
@@ -301,7 +303,7 @@ input.form-control {
     background: white;
     padding: 30px;
     color: #333;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -408,9 +410,13 @@ input.form-control {
 
 /* Reponsive */
 @media only screen and (max-width: 1870px) {
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        padding-top: 13px;
-        font-size: 18px;
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 1850px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
     }
 }
 @media only screen and (max-width:1730px){
@@ -421,13 +427,17 @@ input.form-control {
 @media only screen and (max-width:1700px){
     .navbar-nav{
         padding-left: 55px;
-       }
+    }
+    .right-content1 h1{
+        font-size: 28px;
+    }
 }
 @media only screen and (max-width:1280px){
     .top-header{
         padding-left: 0px;
     }
 }
+
 
 @media only screen and (max-width:1670px){
     .navbar-light .navbar-nav .nav-link {
@@ -466,9 +476,33 @@ input.form-control {
       display: none;
     }
 }
+@media only screen and (max-width: 1399px){
+    .img-link img, .img-link iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .picture-all {
+        position: relative;
+        left: 73px;
+        bottom: 41px;
+        background-color: #1bb462;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: -73px;
+        margin-right: 145px;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 1370px){
     .navbar-light .navbar-nav .nav-link {
         font-size: 13px;
+    }
+    .right-content1 h1{
+        display: list-item;
+        font-size: 25px;
     }
 }
 @media only screen and (max-width: 1300px){
@@ -502,28 +536,49 @@ input.form-control {
         padding-left: 15px;
     }
 }
+@media only screen and (max-width:1199px) {
+    .eye-disease h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0D9851;
+        text-align: center;
+    }
+    .more {
+        background-color: #009247;
+        color: white;
+        padding: 10px;
+        margin: 72px 30px 0px 30px;
+    }
+    .news-contents a{
+        font-size: 19px;
+    }
+    .picture-all {
+        position: relative;
+        left: 73px;
+        bottom: 41px;
+        background-color: #1bb462;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: -73px;
+        margin-right: 85px;
+        text-align: center;
+    }
+}
 @media only screen and (max-width:1175px) {
     .navbar-expand-lg .navbar-nav {
        display: none;
     }
+    .right-content1 h1{
+        display: none;
+    }
 }    
+
 @media only screen and (min-width: 992px) {
     .header-img{
         width: 100px;
         height: auto;
-    }
-    .calendar a{
-    box-shadow: 0px 9px 16px 0px #999;
-    border-radius: 10px;
-    color: white;
-    padding: 12px;
-    text-decoration: none;
-    background-color: #198754;
-    font-weight: 500;
-    font-size: 12px;
-    }
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        font-size: 16px;
     }
    
 }
@@ -533,6 +588,10 @@ input.form-control {
         left: 50%;
         width: 500px;
         height: auto;
+    }
+    .img-link img, .img-link iframe {
+        width: 220px;
+        height: 125px;
     }
     .calendar a, .nav-link, .nav-link.active, .navbar-nav{
         display: none;
@@ -562,29 +621,22 @@ input.form-control {
         padding: 21px;
         text-align: center;
     }
-
-    .text-news p{
+    .text-news p {
         background: white;
-        padding: 15px;
+        padding: 20px 32px;
         color: #333;
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 500;
     }
     .news-contents a{
-        font-size: 10px;
+        font-size: 13px;
     }
     .more {
         background-color: #009247;
         color: white;
-        margin: 145px 0 15px;
     }
     .right-content1{
         display: none;
-    }
-    .more{
-    background-color: #009247;
-    color: white;
-    margin: 225px 0 15px;
     }
     .footer-follow {
         padding: 50px 0 30px 0;
@@ -592,15 +644,20 @@ input.form-control {
         font-size: 20px;
         display: block;
     }
-    
 }
 @media only screen and (max-width:767px){
     .image-gallery{
         display: none;
     }
+    .eyes, .news1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
     .eye-service h2{
     padding: 25px 15px;
-    font-size: 13px;
+    font-size: 18px;
     color: #0D9851;
     }
     .right-content1 {
@@ -613,16 +670,6 @@ input.form-control {
     #couple-doctor{
         display: none;
     } 
-    .eye-service h2{
-        font-size: 10px;
-    }
-    .eyes p {
-        color: black;
-        font-size: 15px;
-        text-align: center;
-        height: 125px;
-        margin: 0 10px;
-    }
     .care h2 {
         font-size: 20px;
     }
@@ -637,15 +684,58 @@ input.form-control {
         display: flex;
         flex-direction: column-reverse;
     }
+    .more {
+        background-color: #009247;
+        color: white;
+    }
+    .text-news p {
+        background: white;
+        padding: 20px 32px;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .eyes p {
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        height: 125px;
+        margin: 0 10px;
+    }
+    .all-doctor{
+        display: inherit;
+    }
+    .news1{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .news-contents a{
+        font-size: 22px;
+    }
+    .footer-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-img {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .take-care {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
-@media only screen and (max-width:441px){
-    .body{
-        overflow: hidden;
-        overflow-x: hidden;
+
+@media only screen and (max-width:441px) {
+    .top-header,
+    .ambulance-icon2 img {
+        display: none;
     }
-    .top-header, .ambulance-icon2 img{
-    display: none;
-    }
+
     .eyes p {
         color: black;
         font-size: 14px;
@@ -653,30 +743,36 @@ input.form-control {
         height: 144px;
         margin: 0 10px;
     }
+
     .eye-service h2 {
         padding: 30px 15px;
         font-size: 10px;
         color: #0D9851;
     }
-    .content-top img{
+
+    .content-top img {
         width: 70%;
     }
-    .footer-content, .hospital-doctor,.eyes, .care{
-        display: inline;
-    }
+
     .right-content1 {
         padding-top: 0px;
     }
-    .all-doctor{
-        display: flex;
-    flex-direction: column-reverse;
-    }
-    .take-care{
-            display: flex;
-            flex-direction: column-reverse;
-    }
-    .news1{
+
+    .all-doctor {
         display: flex;
         flex-direction: column-reverse;
-        }
+    }
+
+    .take-care {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .news1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer-follow{
+        display: inline-block;
+    }
 }
