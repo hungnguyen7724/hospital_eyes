@@ -25,7 +25,7 @@
     color: white;
     padding: 12px;
     text-decoration: none;
-    background-color: #198754;
+    background-color: #00ac4f;
     font-weight: 500;
     font-size: 12px;
 }
@@ -172,8 +172,7 @@ input.form-control {
 .post.col-md-6{
     box-shadow: 0px 9px 16px 0px #999;
 }
-.post.col-md-6:hover{
-    display: inline-grid;   
+.post.col-md-6:hover{   
     box-shadow: 0 1px 20px 0px #878787;
 }
 .post-content {
@@ -259,7 +258,15 @@ textarea#text-lienhe {
 .form-lienhe {
     padding-right: 20px;
 }
-
+.send {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: #00ac4f;
+    float: right;
+    margin:  20px 40px 0 0;
+}
 
 /* Reponsive */
 @media only screen and (max-width: 1870px) {
@@ -486,4 +493,67 @@ textarea#text-lienhe {
         align-items: flex-start;
         flex-direction: row;
     }
+}
+/* post- chi tiet */
+.post-chitiet h3{
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    font-style: normal;
+}
+.post-chitiet p{
+    font-size: 17px;
+    line-height: 27px;
+    margin: 0px 0px 20px 0px;
+}
+.post-chitiet img{
+    padding: 20px 0;
+}
+.link-chitiet, .link-chitiet:hover{
+    text-decoration: none;
+    color: #00ac4f;
+}
+.post-chitiet h2{
+    font-family: 'Asap', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 30px;
+}
+.chiase{
+    display: flex;
+    justify-content: center;
+}
+.chiase img{
+    padding: 10px ;
+    width: 60px;
+    height: 60px;
+}
+.noidung-lienquan h2{
+    color: #00ac4f;
+    padding: 20px 0;
+    text-align: center;
+}
+.trangchitiet{
+    text-align: center;
+}
+.post-chitiet ul li a{
+    text-decoration: none;
+    color: #00ac4f;
+}
+.post-chitiet li {
+    list-style: none;
+}
+.tai-lieu-tham-khao a{
+    text-decoration: none;
+    color: #00ac4f;
+}
+.text-list-chitiet li{
+    list-style: square;
+}
+.text-list-chitiet{
+    line-height: 27px;
+}
+.post-chitiet h4{
+    margin: 20px 0;
 }
