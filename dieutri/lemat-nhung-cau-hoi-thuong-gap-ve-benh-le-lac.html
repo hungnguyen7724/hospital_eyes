@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Những câu hỏi thường gặp về bệnh Lé (lác)
+                            </h3>
+                            <div class="trangchitiet">
+                                <img src="../public/img/le-mat-3.png" alt="" class="img-fluid">
+                            </div>
+                            <h2>Làm thế nào để chẩn đoán lác?</h2>
+                            <p style="font-style:italic">
+                                Hỏi: Con tôi 3 tuổi. Gần đây tôi phát hiện cháu có biểu hiện lác nhưng không biết có
+                                đúng không? Làm thế nào để biết chính xác con mình có bị lác không? Nếu lác nhẹ thì có
+                                cần điều trị không?
+                            </p>
+                            <p style="float: right;">Vũ Thu Hằng (Hà Giang)</p>
+
+                            <p>Trả lời: Lác mắt là hiện tượng mắt bị lệch trụ, có thể lệch vào trong hoặc lệch ra ngoài
+                                do sự không cân bằng của các cơ vận nhãn. Điều này ngăn cản hai mắt cùng nhìn về một
+                                hướng. Mắt lác có thể lệch vào trong, ra ngoài, lên trên hoặc xuống dưới.
+                            </p>
+                            <p>
+                                Trong gia đình, thường bố mẹ phát hiện ra trẻ lác khi thấy trẻ hai mắt không nhìn về một
+                                hướng (hai mắt nhìn hai hướng khác nhau), hoặc tưởng trẻ nhìn hướng này nhưng hóa ra trẻ
+                                đang nhìn về hướng khác. Tuy vậy để xác định trẻ có bị lác thật hay không thì cần bác sĩ
+                                chuyên khoa khám trực tiếp. Bạn nên đưa con đến các bệnh viện Mắt để bác sĩ khám và cho
+                                kết luận cùng những tư vấn cụ thể.
+                            </p>
+                            <h2>Tại sao lác có thể gây nhược thị?</h2>
+                            <p style="font-style:italic">
+                                Hỏi: Bé nhà tôi bị lác nhưng hiện tại thị lực hai mắt vẫn đều nhau. Tôi đang đắn đo việc
+                                phẫu thuật chỉnh lác cho cháu, nhưng lại lo nếu không điều trị thì cháu bị nhược thị.
+                                Xin cho biết tại sao lác có thể gây ra nhược thị?
+                            </p>
+                            <p style="float: right;">Lê Thái Bảo (Hải Phòng)</p>
+                            <p>
+                                Trả lời:
+                            </p>
+                            <p>
+                                Ở trể nhỏ khi mắt bị lác thường xuyên ở 1 mắt, hai mắt sẽ nhìn theo hai hướng khác nhau
+                                và sẽ nhìn thành hai hình. Lúc đó, não sẽ tự động xóa bỏ hình ảnh của mắt lác, ức chế
+                                không cho mắt này nhìn và từ đó gây ra nhược thị. Vì vậy, người bị lác sẽ mất khả năng
+                                nhìn bằng hai mắt, nên không có được thị giác hai mắt.
+                            </p>
+                            <p>
+                                Nếu con nhà bạn đã đi khám chuyên khoa, được xác định 2 mắt lác luân phiên từ lác chuyển
+                                thành lác luân phiên thường xuyên và bác sĩ khuyên nên phẫu thuật chỉnh lác thì nên tuân
+                                thủ chỉ định. Điều đó sẽ tốt cho cháu bé, để phục hồi chức năng thị giác của 2 mắt tránh
+                                bị nhược thị sau này. Nếu điều trị lác muộn thì có thể việc phẫu thuật chỉ giải quyết
+                                vấn đề thẩm mỹ, không có ý nghĩa trong việc phục hồi thị giác 2 mắt.
+                            </p>
+
+
+                            <h2>Phẫu thuật lác</h2>
+                            <p style="font-style:italic">
+                                Hỏi: Con tôi 3,5 tuổi, bị lác ngoài 15 độ. Bác sĩ khuyên nên phẫu thuật chỉnh lác. Phẫu
+                                thuật này có gây ảnh hưởng gì xấu tới mắt không?
+                            </p>
+                            <p style="float: right;">Vũ Xuân Hòa (TP Thái Nguyên)</p>
+                            <p>
+                                Trả lời: Phẫu thuật chỉnh lác là chỉnh cơ bên hông nhãn cầu, không can thiệp vào nội
+                                nhãn nên không ảnh hưởng đến mắt, nhưng cần được thực hiện khi trẻ được gây mê. Các phẫu
+                                thuật viên sẽ mở kết mạc (lớp bọc ngoài cùng của mắt), sau đó làm yếu hoặc làm khoẻ cơ
+                                gây lác mắt. Kết quả đạt được sau phẫu thuật khá cao, từ 85% – 90%. Khoảng 10%- 15% số
+                                trường hợp còn lại cần phải phẫu thuật bổ sung để cho mắt hoàn toàn nhìn thẳng khi trẻ
+                                lớn.
+                            </p>
+                            <p>
+                                Thường bệnh nhân được phẫu thuật về trong ngày, không cần ở lại viện sau mổ. Bệnh nhân
+                                cũng không cần phải băng mắt sau phẫu thuật và nghĩ học dài ngày.
+                            </p>
+
+                            <h2>Có nên bịt mắt để điều trị lác?</h2>
+                            <p style="font-style:italic">
+                                Hỏi: Con tôi mới phát hiện bị lác. Tôi có nên tự điều trị cho cháu ở nhà bằng cách: bịt
+                                bên mắt lành, cho nhìn bên mắt lác không?
+                            </p>
+                            <p style="float: right;">Trần Văn Tuấn (Thái Bình)</p>
+                            <p>
+                                Trả lời: Không rõ con bạn bao nhiêu tuổi, bị lác theo hình thái nào, có bị nhược thị hay
+                                không? Cách như bạn nói chính là điều trị nhược thị, được áp dụng cho tất cả những ca có
+                                nhược thị ở một mắt. Ở phương pháp này, mắt lành được bịt hoàn toàn từ 2-4 giờ/ngày tùy
+                                tuổi của bệnh nhân, tạo điều kiện để tập trung mắt lác bị nhược thị tập luyện phục hồi
+                                thị lực. Đây là phương pháp đơn giản nhưng cần được theo dõi chặt chẽ thị lực mắt bịt vì
+                                có thể xảy ra tình trạng “nhược thị đảo ngược” và gây khó chịu về thẩm mỹ cho trẻ.lớn.
+                            </p>
+
+                            <p>
+                                Tất các các biện pháp điều trị cần theo bác sĩ chuyên khoa. Bạn không nên tự ý điều trị
+                                cho con tại nhà, vừa mất thời gian lại không hiệu quả.
+                            </p>
+
+                            <p style="text-align: right;">Biên tập TTT</a>
+                            </p>
+                        </div>
+                        <!-- Chia sẻ -->
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2>NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-3.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Loạn thị nguyên nhân triệu chứng và cách điều trị
+                                        </a>
+                                        <p>Tật loạn thị có thể gặp ở mọi lứa tuổi, cả trẻ em và người trưởng thành. Loạn
+                                            thị có thể di truyền nên nhiều</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-4.png" -my-4.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Viễn thị – nguyên nhân và cách điều trị</a>
+                                        <p>Viễn thị (Hyperopia, Hypermetropia, Farsightedness) là một vấn đề thị giác
+                                            phổ biến. Những người bị viễn thị có thể nhìn thấy những vật ở</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-5.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Lão thị và những điều cần biết
+                                        </a>
+                                        <p>Lão thị là gì? Lão thị là tật khúc xạ gây ra sự sụt giảm thị lực ở thị giác
+                                            gần từ khoảng 40 tuổi.</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-2.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Cận thị nguyên nhân và cách điều trị</a>
+                                        <p>Cận thị là một trong những điều phiền toái ảnh hưởng không nhỏ đến cuộc sống
+                                            hàng ngày của chúng ta. Nhưng liệu chúng ta có đủ kiến thức về nguyên nhân
+                                            và cách chữa bệnh cận thị hay không?</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước
+                                        Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

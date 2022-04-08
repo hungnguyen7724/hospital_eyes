@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Hỏi đáp các phương pháp phẫu thuật LASER xóa cận – viễn – loạn phổ biến hiện nay</h3>
+                            <div class="trangchitiet">
+                                <img src="../public/img/dt-khuc-xa-1.png" alt="" width="863" height="650">
+                            </div>
+                            <p>Rời bỏ vướng bận từ cặp kính cận là mơ ước của rất nhiều người khi phải sống chung cùng
+                                tật khúc xạ. Phẫu thuật chữa cận – viễn – loạn bằng tia laser ra đời được xem là giải
+                                pháp cứu cánh để biến ước mơ đó thành sự thật.</p>
+
+                            <p>Trong khuôn khổ bài viết hôm nay, bác sĩ CKII Trần Thị Hồng Tường – Trưởng khoa Phẫu
+                                thuật khúc xạ Bệnh viện Đa khoa Mắt Sài Gòn sẽ giải đáp cho các độc giả đã, đang và sẽ
+                                có dự định xóa cận 8 câu hỏi thường gặp nhất về các phương pháp chữa tật khúc xạ bằng
+                                tia LASER.</p>
+
+                            <h2>Tính an toàn của phẫu thuật khúc xạ bằng LASER?</h2>
+                            <p>
+                                Phẫu thuật khúc xạ bằng laser đã được chứng minh là an toàn, hiệu quả, chính xác, ổn
+                                định và thị lực phục hồi nhanh chóng. Trong phẫu thuật khúc xạ, tia femtosecond laser và
+                                laser excimer được điều khiển và kiểm tra chặt chẽ bằng hệ thống vi tính, chỉ tác dụng
+                                khu trú tại chỗ trên giác mạc không ảnh hưởng đến các bộ phận khác. Các phương pháp xóa
+                                cận viễn loạn bằng laser hiện nay đều đã được <a href="https://www.fda.gov/"
+                                    class="link-chitiet"> Cục quản lý Thực phẩm và Dược phẩm Hoa Kỳ (FDA)</a> chấp
+                                thuận. Tỉ lệ thành công của phẫu thuật rất cao, với khoảng 96% người sử dụng đạt được
+                                thị lực 10/10 theo thống kê của Hiệp hội Nhãn khoa Mỹ và khoảng 96-98% bệnh nhân được
+                                khảo sát trả lời rằng họ thấy hài lòng và rằng phẫu thuật đã cải thiện chất lượng cuộc
+                                sống của họ.
+                            </p>
+
+                            <h2>Số độ cận – viễn – loạn mà phẫu thuật LASER có thể điều chỉnh?</h2>
+                            <p>Theo sự chấp thuận của Cơ quan quản lý Thực phẩm và Dược phẩm Hoa Kỳ:</p>
+                            <p>– Phương pháp điều trị khúc xạ bằng LASER EXCIMER như Femtosecond LASIK, LASIK, LASER bề
+                                mặt có thể điều trị độ cận đến -12.0 diopter kèm hoặc không kèm theo độ loạn đến 6
+                                diopter, độ viễn đến +6.0 diopter.</p>
+                            <p>– Phương pháp ReLEx SMILE dùng tia femtosecond laser hoàn toàn, không tạo vạt có thể điều
+                                trị độ cận đến -10.0 diopter và độ loạn đến -3.0 diopter.</p>
+
+                            <h2>Sự khác biệt giữa các phương pháp phẫu thuật LASER?</h2>
+                            <p>Hiện nay, có nhiều phương pháp điều trị tật khúc xạ nhưng phổ biến nhất là phẫu thuật
+                                LASIK, Femto-LASIK, ReLEx SMILE.</p>
+                            <p>
+                                – <a href="" class="link-chitiet">Phương pháp LASIK thường quy:</a>
+                                là phẫu thuật ra đời trước nhất từ những năm 1990, sử dụng dao vi phẫu tự động
+                                (microkeratome) tạo vạt giác mạc và dùng tia laser excimer bóc bay nhu mô giác mạc tạo
+                                hình lại giác mạc điều trị hết tật khúc xạ. Phương pháp này tương đối an toàn, hiệu quả
+                                nhưng vẫn có tiềm ẩn một số nguy cơ xảy ra sự cố liên quan vạt trong và sau khi mổ, tuy
+                                nhiên với tỉ lệ rất thấp.
+                            </p>
+                            <p>
+                                – <a href="#" class="link-chitiet"> Phương pháp Femtosecond LASIK:</a> cải tiến hơn.
+                                Femtosecond LASIK an toàn hơn, sử dụng tia Femtosecond laser tạo vạt giác mạc thay cho
+                                dao vi phẫu giúp tạo vạt chính xác đến từng micron đặc biệt quan trọng trên những mắt
+                                cận thị cao, giác mạc mỏng và giảm thiểu tối đa gần như không còn biến chứng trong phẫu
+                                thuật. Hơn nữa, tạo vạt bằng tia Femtosecond laser với các hệ thống máy thế hệ mới như
+                                Visumax thì áp lực nội nhãn trong lúc tạo vạt cũng giảm chỉ khoảng 1/3 so với tạo vạt
+                                bằng dao vi phẫu, hạn chế các nguy cơ thiếu máu nhãn cầu tạm thời.
+                            </p>
+                            <p>
+                                – <a href="#" class="link-chitiet">Phương pháp ReLEx SMILE:</a> Là phương pháp xóa cận
+                                tiên tiến nhất hiện nay. Điểm ưu việt của ReLEx SMILE là không tạo vạt giác mạc, ít xâm
+                                lấn nên bạn sẽ không cần lo lắng nguy cơ biến chứng liên quan vạt giác mạc trong và sau
+                                khi mổ. SMILE sử dụng tia Femtosecond Laser có tính chính xác cao tạo hai mặt phân cách,
+                                tách và rút lõi mô tương ứng với độ khúc cần loại bỏ qua đường mổ nhỏ chỉ 2mm-4mm so với
+                                Lasik và Femtosecond Lasik có đường mổ đến khoảng 20mm. Đường mổ nhỏ sẽ giúp bảo tồn tối
+                                đa cấu trúc của giác mạc, hạn chế tối đa tình trạng khô mắt sau phẫu thuật, đồng thời
+                                mắt cũng phục hồi nhanh hơn.
+                            </p>
+
+                            <h2>Các tiêu chí chung lựa chọn bệnh nhân phẫu thuật khúc xạ bằng LASER?</h2>
+                            <p>
+                                Một số tiêu chí chung là bạn phải từ 18 tuổi trở lên, có độ khúc xạ ổn định ít nhất
+                                trong 6 tháng, không có các bệnh lý ở mắt kèm theo (như giác mạc chóp, glaucoma, tiền sử
+                                viêm giác mạc Herpes…), không có bệnh lý nội khoa như tiểu đường hay bệnh lý tự miễn và
+                                không đang mang thai. Bạn cũng được khuyến cáo nên phẫu thuật sau sinh ít nhất 3-6 tháng
+                                để nội tiết tố trở về bình thường và khúc xạ ổn định.</p>
+
+                            <h2>Mắt tôi phù hợp với phương pháp phẫu thuật Lazer nào?</h2>
+                            <p>
+                                Để biết được bạn có thể phẫu thuật khúc xạ được hay không và phù hợp phương pháp phẫu
+                                thuật nào, bạn cần đến khám và tham vấn trực tiếp với bác sĩ. Quy trình khám mắt chuyên
+                                sâu trước phẫu thuật tật khúc xạ gồm nhiều bước, thường diễn ra trong vòng 2-3 tiếng: đo
+                                khúc xạ chủ quan, chụp bản đồ giác mạc, đo bề dày giác mạc, đường kính giác mạc, độ cong
+                                giác mạc, kích thước đồng tử, nhỏ thuốc liệt điều tiết và đo khúc xạ khách quan sau khi
+                                liệt điều tiết. Ngoài ra một số cận lâm sàng khác có thể được chỉ định trong những
+                                trường hợp cần thiết như: chụp hình đáy mắt, chụp cắt lớp gai thị võng mạc OCT, siêu âm
+                                mắt, chụp đếm tế bào nội mô giác mạc, đo thị trường. Kết hợp tất cả các thông số mắt của
+                                từng bệnh nhân, bác sĩ sẽ tư vấn phương pháp tối ưu phù hợp với mắt của bạn.</p>
+                            <h2>Tôi sẽ cảm thấy như thế nào trong và sau khi phẫu thuật?</h2>
+                            <p>
+                                Trước phẫu thuật, mắt bạn được nhỏ thuốc tê để loại bỏ các cảm giác khó chịu. Hầu hết
+                                bệnh nhân sau phẫu thuật điều cho biết rất ngạc nhiên vì không hề có cảm giác đau như họ
+                                từng e ngại. Tia Laser chỉ tác động lên giác mạc, không gây đau nhức, phẫu thuật cũng
+                                không cần khâu, vạt giác mạc sau khi phẫu thuật chỉ cần đặt lại là có thể dính liền với
+                                nền giác mạc bên dưới và tự lành.
+                            </p>
+                            <p>
+                                Sau phẫu thuật, mắt bạn có thể sẽ chảy nước mắt liên tục và có cảm giác cộm xốn như có
+                                bụi bay vào mắt. Tuy nhiên các triệu chứng này là hoàn toàn bình thường và thường biến
+                                mất trong khoảng 2-4 giờ đồng hồ.
+                            </p>
+
+                            <h2>
+                                Những lưu ý về thời gian quay trở lại làm việc và sinh hoạt bình thường sau phẫu thuật?
+                            </h2>
+                            <p>
+                                Ưu điểm của phẫu thuật ReLEx SMILE, Femto-LASIK, LASIK là thị lực phục hồi nhanh chóng,
+                                thời gian hậu phẫu ngắn, bệnh nhân mau trở lại cuộc sống thường ngày. Bạn có thể trở lại
+                                sinh hoạt hàng ngày như làm việc với điện thoại, máy vi tính, chạy xe…sau mổ 1 ngày. Tuy
+                                nhiên, bạn cần cho mắt nghỉ ngơi hợp lý như làm việc với máy tính mỗi 20-30 phút cho mắt
+                                nghỉ ngơi vài phút bằng cách nhắm mắt nghỉ, nhỏ 1-2 giọt nước mắt nhân tạo hoặc nhìn ra
+                                xa ngoài cửa sổ cho mắt thư giãn.
+                            </p>
+                            <p>
+                                Bệnh nhân sau mổ khúc xạ cần tránh nước bẩn vào mắt trong 1 tuần đầu sau phẫu thuật. Và
+                                cần tránh dụi tay lên mắt hay chơi các môn thể thao như đá banh, tennis, boxing, bơi
+                                lội, … trong ít nhất 1-3 tháng sau phẫu thuật vì có thể bị chấn thương gây nhăn lệch vạt
+                                giác mạc.
+                            </p>
+                            <p>
+                                Riêng đối với bệnh nhân mổ SMILE vì vết mổ nhỏ, không tạo vạt, có tính an toàn hơn nên
+                                chỉ cần tránh nước vào mắt trong khoảng 3 ngày, không cần kiêng cữ các động tác dụi tay
+                                hay các môn thể thao hoặc có thể đeo contact len trở lại sau khoảng 1 tháng.
+                            </p>
+                            <h2>Khả năng tái cận sau phẫu thuật?</h2>
+                            <p>
+                                Phẫu thuật khúc xạ bằng laser có tính ổn định cao, nên nếu khúc xạ của bạn đã ổn định
+                                thì tỉ lệ tái cận thật sự rất thấp, chỉ khoảng 1-2% đối với phương pháp Femto-LASIK,
+                                LASIK và thấp hơn nữa khoảng dưới 1% với phương pháp SMILE. Mức độ tái cận nếu có thường
+                                ở mức nhẹ và xuất hiện về sau. Người có độ cận hoặc loạn cao sẽ có nguy cơ cao hơn ở
+                                những người độ thấp. Và cũng có thể do thói quen sinh hoạt mắt như hay làm việc trong
+                                môi trường thiếu sáng hoặc làm việc mắt liên tục không nghỉ ngơi hợp lý.
+                            </p>
+                            <p>
+                                Tuy nhiên, trong trường hợp tái độ lại, nếu điều kiện giác mạc cho phép, bạn vẫn có thể
+                                điều trị bổ sung. Hệ thống bệnh viện Mắt Sài Gòn có chính sách tái khám miễn phí trong
+                                12 tháng sau phẫu thuật, và kể cả chiếu laser bổ sung nếu đủ chỉ định.
+                            </p>
+                            <img src="../public/img/BS-Tường.png" alt="">
+                            <p style="text-align: right;">
+                                Trưởng khoa Phẫu thuật khúc xạ Bệnh viện Đa khoa Mắt Sài Gòn
+                            </p>
+                            <p style="text-align: right;">
+                                <a href="#" class="link-chitiet">BS CKII Trần Thị Hồng Tường</a>
+                            </p>
+                        </div>
+
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2 >NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-3.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Loạn thị nguyên nhân triệu chứng và cách điều trị
+                                        </a>
+                                        <p>Tật loạn thị có thể gặp ở mọi lứa tuổi, cả trẻ em và người trưởng thành. Loạn thị có thể di truyền nên nhiều</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-4.png"-my-4.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Viễn thị – nguyên nhân và cách điều trị</a>
+                                        <p>Viễn thị (Hyperopia, Hypermetropia, Farsightedness) là một vấn đề thị giác phổ biến. Những người bị viễn thị có thể nhìn thấy những vật ở</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-5.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Lão thị và những điều cần biết
+                                        </a>
+                                        <p>Lão thị là gì? Lão thị là tật khúc xạ gây ra sự sụt giảm thị lực ở thị giác gần từ khoảng 40 tuổi.</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-2.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Cận thị nguyên nhân và cách điều trị</a>
+                                        <p>Cận thị là một trong những điều phiền toái ảnh hưởng không nhỏ đến cuộc sống hàng ngày của chúng ta. Nhưng liệu chúng ta có đủ kiến thức về nguyên nhân và cách chữa bệnh cận thị hay không?</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

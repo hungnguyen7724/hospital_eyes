@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Bệnh lé (bệnh lác) mắt nguyên nhân và cách điều trị
+                                <div class="trangchitiet">
+                                    <img src="../public/img/le-mat-1.png" alt="" class="img-fluid">
+                                </div>
+                                <h2>Bệnh mắt lé là gì?</h2>
+
+                                <p>Bệnh lé hay còn gọi là bệnh lác, là tình trạng hai mắt không thẳng hàng ở tư thế
+                                    nguyên phát (nhìn thẳng về phía trước) một mắt lệch so với mắt còn lại. Tùy theo cơ
+                                    bị ảnh hưởng mà mắt lé có thể
+                                </p>
+                                <div class="trangchitiet">
+                                    <img src="../public/img/nhan-nhi-2.png" alt="" class="img-fluid">
+                                </div>
+                                <h2>
+                                    Nguyên nhân gây lé và ai có thể bị lé?
+                                </h2>
+                                <p>
+                                    Mắt có 6 cơ vận nhãn: 4 cơ trực và 2 cơ chéo bám xung quanh giúp mắt liếc các hướng.
+                                    Lé xảy ra khi có sự mất cân bằng giữa các cơ vận nhãn do cơ hay thần kinh chi phối
+                                    cho cơ. Lé có thể xảy ra ở mọi lứa tuổi.
+                                </p>
+                                <p>
+                                    – Lé bẩm sinh là khi trẻ sinh ra đã thấy lé hay lé xuất hiện trong giai đoạn từ 6
+                                    tháng tuổi. Lé thứ phát thường xảy ra ở người lớn do bệnh lý toàn thân (Basedow,
+                                    u…), tại mắt (đục thể thủy tinh, bất đồng khúc xạ, bệnh lý đáy mắt..), chấn thương
+                                    vùng đầu mặt, phẫu thuật các bệnh lý ở mắt (Glaucoma, ấn độn…).
+                                </p>
+                                <p>
+                                    – Lé do yếu tố điều tiết qui tụ, xảy ra trong độ tuổi đến trường do tật khúc xạ viễn
+                                    thị hay cận thị.
+                                </p>
+                                <p>
+                                    – Lé do yếu tố di truyền chưa được khẳng định.
+                                </p>
+
+                                <h2>Tác hại của bệnh lé?</h2>
+                                <p>Tác hại nghiêm trọng nếu lé xảy ra ở trẻ em đang trong giai đoạn phát triển thị giác,
+                                    có thể gây mất thị lực ở mắt lé (hay còn gọi là nhược thị). Mất khả năng nhận thức
+                                    chiều sâu (thị giác 2 mắt) – khả năng canh khoảng cách kém giữa 2 vật; dễ bước hụt
+                                    chân cầu thang.</p>
+                                <p>
+                                    Giảm thị trường quan sát ở một mắt. Một số nghề nghiệp sau này đòi hỏi thị giác hai
+                                    mắt tốt (lắp ráp máy móc, dùng kính hiển vi, vận động viên thể thao…). Vì vậy nên
+                                    đưa trẻ đi khám ở cơ sở có chuyên khoa lé ngay khi phát hiện trẻ có lé.
+                                </p>
+                                <h2>Triệu chứng của bệnh lé</h2>
+                                <p>
+                                    <span style="font-weight: 500;">– Triệu chứng thực thể:</span> lé rất dễ nhận biết
+                                    khi tự soi gương hay người xung quanh phát hiện thấy mắt lệch. Đối với những trường
+                                    hợp lé ẩn thì khám chuyên khoa mới phát hiện được.
+                                </p>
+                                <p>
+                                    <span style="font-weight:500">– Triệu chứng chủ quan</span>
+                                </p>
+                                <p>
+                                    + Mỏi mắt thường xuyên, khả năng tập trung kém.
+                                </p>
+                                <p>
+                                    + Hậu đậu, đi lại hay vấp té, làm việc không chính xác bằng người bình thường.
+                                </p>
+                                <p>
+                                    + Mắt lé thường xuyên có thể mờ hơn mắt không lé. Tư thế nghiêng đầu thích nghi với
+                                    tình trạng lé
+                                </p>
+                                <p>
+                                    + Song thị (hai hình) nếu lé xảy ra đột ngột ở người có chức năng thị giác đã hoàn
+                                    thiện -> cần đi khám chuyên khoa để loại trừ những bệnh lý cấp tính hệ thần kinh TW.
+                                </p>
+
+                                <h2>Điều trị bệnh lé
+                                </h2>
+                                <h2>Mục tiêu điều trị
+                                </h2>
+                                <p> + Ở trẻ < 6 tuổi & trẻ đi học : bảo toàn chức năng hợp thị hai mắt và ngăn ngừa mù
+                                        mắt lé </p>
+                                        <p> + Ở trẻ < 6 t+ Ở người trưởng thành: chỉnh lé chỉ có mục đích thẩm mĩ. </p>
+                                                <p> Ngoại trừ một số trường hợp lé cấp là phục hồi chức năng hợp thị.
+                                                </p>
+
+                                                <h2>Các phương pháp điều trị lé</h2>
+                                                <p>Tùy theo từng trường hợp lé, sẽ áp dụng một hoặc kết hợp các phương
+                                                    pháp sau:
+                                                </p>
+                                                <p>+ Tập qui tụ, tập liếc sang hướng ngược chiều lé.</p>
+
+                                                <p> + Đeo kính khi lé do quy tụ điều tiết hay kèm tật khúc xạ.
+                                                <p>
+                                                    Ở người lớn lé gây song thị độ nhỏ có thể mang lăng kính.
+                                                </p>
+                                                <p> + Che mắt khi mắt lé bị nhược thị.</p>
+                                                <p> + Phẫu thuật: là điều chỉnh các cơ vận nhãn nhằm đưa 2 mắt về thẳng
+                                                    trục.</p>
+                                                <p> + Tiêm thuốc (Botulium toxin):</p>
+                                                <p>
+                                                    Trường hợp lé thứ phát ở người lớn do liệt cơ vận nhãn trong thời
+                                                    gian chờ đợi phẫu thuật để giải quyết tạm thời tình trạng song thị.
+                                                </p>
+                                                <h2>
+                                                    Những câu hỏi thường gặp về bệnh lé
+                                                </h2>
+                                                <p>
+                                                    <span style="font-style:italic">– Trẻ bao nhiêu tuổi có thể khám lé
+                                                        được?</span> Trẻ có lé mắt > 6 tháng tuổi, khám ở cơ sở chuyên
+                                                    khoa Mắt có phòng khám lé
+                                                </p>
+                                                <p>
+                                                    <span style="font-style:italic">– Tuổi nào có chỉ định phẫu thuật
+                                                        chỉnh lé?</span> Chỉ định mổ lé sớm hay muộn tùy thuộc vào mức
+                                                    độ tổn hại chức năng thị giác 2 mắt và dạng lé. Ở Việt Nam, phẫu
+                                                    thuật cho trẻ sớm nhất từ 18 đến 22 tháng tuổi ở cơ sở có phương
+                                                    tiện gây mê hồi sức tốt.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– Mổ lé có nguy hiểm không?</span>
+                                                </p>
+
+                                                <p>+ Phẫu thuật lé không ảnh hưởng thị lực trước đó của bệnh nhân.</p>
+                                                <p>
+                                                    + Các biến chứng do mổ có thể như tụ máu gây đỏ mắt, sưng phù kết
+                                                    mạc (lòng trắng mắt) hoặc mi mắt. Những biến chứng này có thể điều
+                                                    trị hết mà không để lại di chứng.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– Mổ một mắt hay hai mắt? </span>
+                                                    Tùy trường hợp cụ thể, bác sĩ sẽ tư vấn cho bệnh nhân để có kết quả
+                                                    tốt nhất có thể.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– Sau mổ lé có tái phát không?
+                                                    </span> Những trường hợp lé không do bệnh lý (Basedow, mất thị lực)
+                                                    thì sau mổ lé sẽ hết lé, nhiều trường hợp độ lé cao cần mổ 2 lần mới
+                                                    hết lé.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– – Mổ lé có đau không? </span>Mổ
+                                                    lé không đau vì chỉ nhỏ và bơm thuốc tê vào cạnh mắt. Sau mổ, khi
+                                                    thuốc tê hết tác dụng bệnh nhân nên uống thuốc giảm đau bác sĩ đã kê
+                                                    toa.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– – Mổ lé có phải nằm viện
+                                                        không?</span> thời gian mổ bao lâu? Bệnh nhân có thể ra về ngay
+                                                    sau cuộc mổ. Tái khám sau phẫu thuật: 1 ngày – 1 tháng – 3 tháng – 6
+                                                    tháng – 1 năm. Thời gian phẫu thuật khoảng 20-40 phút.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– Sau mổ lé có phải cắt chỉ không?
+                                                    </span>Sử dụng chỉ tự tiêu nên không cần cắt chỉ.
+                                                </p>
+                                                <p>
+                                                    <span style="font-style: italic;">– Sau mổ bao lâu có thể làm việc
+                                                        bình thường? </span>Bệnh nhân cần nghỉ ngơi ít nhất 1 ngày sau
+                                                    phẫu thuật. Mắt sẽ đỏ trong khoảng 1 tuần đến 10 ngày sau mổ.
+                                                </p>
+
+                                                <div class="trangchitiet">
+                                                    <img src="../public/img/le-mat-4.png" alt="" class="img-fluid">
+                                                </div>
+
+                                                <p style="text-align: right;">
+                                                    <a href="#" class="link-chitiet">Bệnh viện mắt Sài Gòn</a> <br>
+                                                    BS. Lê Thục Nhi
+                                                </p>
+
+                        </div>
+                        <!-- Chia sẻ -->
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2>NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/tham-my-3.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Phẫu thuật hở mi
+                                        </a>
+                                        <p>Bệnh lý giác mạc do hở mi là một trong những trường hợp phổ biến của bệnh lý
+                                            về mặt giác mạc. Cần tìm hiểu</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post col-md-6">
+                                    <img src="../public/img/tham-my-4.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Hở mi mắt: Nguy cơ mắc phải và cách điều trị</a>
+                                        <p>Hở mi mắt có khá nhiều nguyên nhân, cách điều trị còn phụ thuộc vào tác nhân
+                                            gây bệnh </p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post col-md-6">
+                                <img src="../public/img/benh-mat-khac-15.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Bệnh võng mạc ở trẻ đẻ non</a>
+                                    <p>Bệnh võng mạc trẻ đẻ non được biết đến là một trong những nguyên nhân gây mù
+                                        lòa chính ở trẻ. Nếu không được khám</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post col-md-6">
+                                <img src="../public/img/benh-mat-khac-16.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Co giật mí mắt, điềm báo hay triệu chứng bệnh về mắt</a>
+                                    <p>Nhiều người vẫn cho rằng nếu bị giật mí mắt, nháy mắt liên tục là ‘điềm
+                                        báo’ một việc gì đó bất thường mang tính</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước
+                                        Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

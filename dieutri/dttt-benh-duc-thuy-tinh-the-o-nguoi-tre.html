@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Bệnh đục thủy tinh thể đang trẻ hóa do lối sống hiện đại
+                            </h3>
+                            <div class="trangchitiet">
+                                <img src="../public/img/duc-thuy-tinh-the-2.png" alt="" class="img-fluid">
+                            </div>
+
+                           
+                            <p>Theo WHO (World Health Organization – Tổ chức Y tế thế giới), bệnh đục thủy tinh thể là một trong những nguyên nhân hàng đầu gây mù lòa. Theo thống kê trên toàn thế giới hiện có hơn 50 triệu người có thị lực dưới 2/10 do đục thủy tinh thể. Hàng năm có thêm khoảng 20 triêu người mất thị lực vĩnh viễn do đục thủy tinh thể. 
+                            </p>
+                            <p>
+                                Nếu như trước kia, đục thủy tinh thể là bệnh “đặc quyền” do tuổi già thì ngày nay bệnh đang có xu hướng trẻ hóa, hiện số người trẻ mắc bệnh đục thủy tinh thể chiếm khoảng 30% số bệnh nhân. Tỷ lệ bệnh có xu hướng trẻ hóa do tác động bởi lối sống chủ quan, thiếu ý thức chăm sóc mắt, môi trường ô nhiễm
+                            </p>
+                          <h2>
+                            Thủy tinh thể mờ đục sẽ gây suy giảm thị lực
+                          </h2>
+                            <p>
+                                Thể thủy tinh có vai trò như một thấu kính hội tụ giúp ánh sáng sau khi đi qua võng mạc được hội tụ đúng giác mạc. Thành phần cấu tạo chủ yếu của thủy tinh thể là nước và protein.
+                            </p>
+                            <p>
+                                Trong đó, 35% là protein giúp thủy tinh thể luôn trong suốt. Ngoài nhiệm vụ hội tụ ánh sáng, thủy tinh thể còn có nhiệm vụ điều tiết (phồng lên hay xẹp xuống) giúp mắt nhìn xa hoặc nhìn gần rõ nét.
+                            </p>
+                            <div class="trangchitiet">
+                                <img src="../public/img/duc-thuy-tinh-the-1.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Dưới tác động của môi trường như: tia cực tím, các chất độc hại….khiến protein trong thủy tinh thể bị kết tủa hoặc thay đổi trật tự cấu trúc, từ đó co cụm lại hình thành những vùng đục, cản trở, uốn cong ánh sáng khiến hình ảnh không hội tụ đúng được trên võng mạc.
+                            </p>
+                            <h2>Bệnh đục thuỷ tinh thể có nguy hiểm và phổ biến không?</h2>
+
+                            <p>Điều đáng nguy hiểm là bệnh đục thủy tinh thể không hề có triệu chứng rõ ràng, chỉ đến khi bệnh quá nặng, suy giảm thị lực nghiêm trọng thì người bệnh mới đi khám.</p>
+                                    <p>
+                                        Vì thể khi gặp những triệu chứng như: nhìn mờ như trong sương, ban đêm thấy đèn có quầng sáng bao quanh, khó phân biệt màu sắc…bạn nên đến khám ngay tại các bệnh viện mắt uy tín. Hiện nay phương pháp tối ưu nhất để điều trị bệnh đục thủy tinh thể là phẫu thuật. 
+                                    </p>
+                                    <p>
+                                        Con số này được dự đoán đến năm 2020 là 40 triệu và số ca phẫu thuật đục thể
+                                        thuỷ tinh phải tăng gấp 3 lần mới đáp ứng được. Đục thể thuỷ tinh được xem là
+                                        yếu tố nguy cơ độc lập gây tăng tỉ lệ tử vong ở người lớn tuổi.
+                                    </p>
+                                    <p>
+                                        Tại Mỹ ước tính có gần 20,5 triệu trên 40 tuổi bị đục thể thuỷ tinh (chiếm 1/6
+                                        số người trong độ tuổi này). Trong 2004 có khoảng 2,5 triệu ca mổ đục thể thuỷ
+                                        tinh ở Mỹ, đạt mức 8000 ca/1000.000 dân, trong khi đó ở Trung quốc là 500 và các
+                                        nước kém phát triển là khoảng 50.
+                                    </p>
+                                    <p>
+                                        Ở Đông nam á mù do đục thể thuỷ tinh chiếm 50% các loại mù. 50% người trên 60
+                                        đục thể thuỷ tinh và đạt đến 100% ở người trên 80. Nữ nhiều hơn nam.
+                                    </p>
+                                    <p>
+                                        Theo Viện Mắt trung ương Việt Nam 1995: Mù một mắt 1,18% hai mắt 1,25%, Tỉ lệ
+                                        đục thể thuỷ tinh cục bộ hai mắt 3,76%, đục toàn bộ hai mắt 0,84%.Năm 2000 mù do
+                                        đục thể thuỷ tinh chiếm 60% các loại mù trong đó nữ đục thể thuỷ tinh 2 mắt
+                                        chiếm 68,5%,nam chiếm 59,3%.
+                                    </p>
+                                    <h2>Nguyên nhân đục thủy tinh thể và các yếu tố nguy cơ?
+                                    </h2>
+                                    <p>Hiện nay có rất nhiều nguyên nhân có thể gây ra bệnh đục thủy tinh thể như: môi
+                                        trường, lối sống, chế độ dinh dưỡng, di truyền, chấn thương…Tuy nhiên đục thủy
+                                        tinh thể do tuổi tác chiếm tới 99%. Hiện tượng đục thể thuỷ tinh hầu hết đều
+                                        xuất hiện sau độ tuổi 60.
+                                    <p>
+
+                                    <div class="text-list-chitiet">
+                                        <ul>
+                                            <li><span style="font-weight:500;">Tuổi tác:</span> Khi con người già đi, những sự thay đổi có thể
+                                                xảy ra trong cấu trúc protein thủy tinh thể dẫn đến đục thể thuỷ tinh.
+                                            </li>
+                                            <li><span style="font-weight:500;">Bẩm sinh:</span> Trẻ em mới sinh ra cũng có nguy cơ mắc đục thủy
+                                                tinh thể do rối loạn si truyền. Ngoài ra bệnh cũng có thể phát triển do
+                                                mẹ khi mang thai mắc các bệnh truyền nhiễm như như bệnh sởi, bệnh rộp da
+                                                và giang mai.</li>
+                                            </li>
+                                            <li>
+                                                <span style="font-weight:500;">Các nguyên nhân thứ phát:</span>Các căn bệnh như tăng nhãn áp,
+                                                tiểu đường cũng có thể biến chứng thành đục thể thuỷ tinh. Dùng kéo dài
+                                                một số thuốc như corticoid (nhỏ cũng như uống), thuốc hạ mỡ máu
+                                                (simvastatin), thuốc chống loạn nhịp tim (amilodarone), thuốc trầm cảm
+                                                (phenothiazin)… làm tăng nguy cơ đục thể thuỷ tinh.
+                                            </li>
+                                            <li>
+                                                <span style="font-weight:500;">Chấn thương:</span> Một số chấn thương có thể dẫn đến sự hình
+                                                thành đục thể thuỷ tinh ngay hoặc sau nhiều năm.
+                                            </li>
+                                            <li>
+                                                <span style="font-weight:500;">Các nguyên nhân khác:</span> bao gồm mắt tiếp xúc quá nhiều với
+                                                tia UV (tia cực tím), tia X và bức xạ khác trong lúc xạ trị.Ánh nắng mặt
+                                                trời đã được chứng minh làm đục thể thuỷ tinh gấp 2 đến 3 lần nhóm chứng
+                                                và không thể xem là yếu tố phối hợp. Rối loạn dinh dưỡng, ỉa chảy mất
+                                                nước, thiếu hụt các yếu tố chống oxi hoá, hút thuốc, uống rượu cũng là
+                                                những yếu tố phối hợp quan trọng.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="trangchitiet">
+                                        <img src="../public/img/duc-thuy-tinh-the-3.png" alt="" class="img-fluid">
+                                    </div>
+
+                                   
+                                    <p>Dưới tác động của môi trường như: tia cực tím, các chất độc hại….khiến protein trong thủy tinh thể bị kết tủa hoặc thay đổi trật tự cấu trúc, từ đó co cụm lại hình thành những vùng đục, cản trở, uốn cong ánh sáng khiến hình ảnh không hội tụ đúng được trên võng mạc.
+                                    </p>
+                                    <p>Điều đáng nguy hiểm là bệnh đục thủy tinh thể không hề có triệu chứng rõ ràng, chỉ đến khi bệnh quá nặng, suy giảm thị lực nghiêm trọng thì người bệnh mới đi khám.</p>
+
+                                    <p>Vì thể khi gặp những triệu chứng như: nhìn mờ như trong sương, ban đêm thấy đèn có quầng sáng bao quanh, khó phân biệt màu sắc…bạn nên đến khám ngay tại các bệnh viện mắt uy tín. Hiện nay phương pháp tối ưu nhất để điều trị bệnh đục thủy tinh thể là phẫu thuật. </p>
+
+                                    <h2>Lối sống và ô nhiễm khiến bệnh đục thủy tinh thể trẻ hóa</h2>
+                                    <p>Môi trường ô nhiễm, lối sống buông thả (hút thuốc, sử dụng chất kích thích, sử dụng thiết bị điện tử không kiểm soát…), tâm lý chủ quan thiếu ý thức chăm sóc mắt là nguyên nhân khiến tỷ lệ bệnh đục thủy tinh thể có xu hướng trẻ hóa. Những nguyên nhân này đẩy nhanh quá trình lão hóa mắt, khiến đục thủy tinh thể ngày càng trẻ hóa.</p>
+
+                                    <div class="trangchitiet">
+                                        <img src="../public/img/duc-thuy-tinh-the-5.png" alt="" class="img-fluid">
+                                    </div>
+
+
+                                    <p>Tỷ lệ bệnh đục thủy tinh thể ngày càng trẻ hóa cũng do sự gia tăng của các bệnh lý dễ dẫn đến đục thủy tinh thể như  đái tháo đường, cận thị… Đặc biệt lối sống buông thả (hút thuốc, béo phì, thức khuya, ít vận động), môi trường ô nhiễm, thường xuyên sử dụng các thiết bị điện tử…khiến giới trẻ ngày càng gia tăng tỷ lệ mắc đục thể thủy tinh.</p>
+                                    <p>Cụ thể, đục thủy tinh thể có thể xảy ra sớm hơn 10 năm và dễ dàng tăng nặng với người bị cận thị; còn với bệnh nhân tiểu đường, đục thủy tinh thể là một trong hai biến chứng nguy hiểm nhất.</p>
+
+                                    <h2>
+                                        Nguyên nhân hình thành đục thủy tinh thể ở người trẻ
+                                    </h2>
+                                    <p>
+                                        – Thiếu vitamin cần thiết cho mắt như E, A, B2 và các nguyên tố vi lượng như phốt pho, kẽm, canxi…
+                                    </p>
+                                    <p>– Sự gia tăng nhiệt độ ngoài trời do trái đất ngày càng nóng lên.</p>
+                                    <p>
+                                        – Ô nhiễm không khí, khói bụi làm thiếu oxy, dẫn đến sự gia tăng natri, acid lactic và giảm vitamin C,…dẫn tới dễ bị đục thể thủy tinh.
+                                    </p>
+                                    <p>
+                                        – Không bảo vệ mắt, để mắt tiếp xúc trực tiếp với tia cực tím.
+                                    </p>
+
+                                    <h2>Làm gì để hạn chế đục thủy tinh thể?</h2>
+                                    <p>
+                                        – Đeo kính mát khi ra đường để bảo vệ mắt khỏi tia cực tím.
+                                    </p><p>
+                                        – Nếu thị lực kém, hạn chế lái xe vào ban đêm.
+                                    </p>
+                                    <p>
+                                        – Thường xuyên kiểm tra mắt định kỳ.
+                                    </p>
+                                    <p>
+                                        – Làm việc, học tập trong môi trường đủ ánh sáng.
+                                    </p>
+                                    <p>
+                                        - Thường xuyên xét nghiệm các bệnh như đái tháo đường, cận thị…
+                                    </p>
+                                    <p>
+                                        – Thường xuyên ăn thực phẩm bổ dưỡng cho mắt.
+                                    </p>
+                                    <p>
+                                        – Hạn chế ăn đồ chiên xào, đồ cay, nóng. Không hút thuốc lá, sử dụng chất kích thích.
+                                    </p>
+                                    <p>
+                                        – Không tùy ý sử dụng các loại thuốc nhỏ mắt khi chưa có chỉ định của bác sĩ.
+                                    </p>
+                                    
+                                    <p style="text-align: right;">
+                                        <a href="#" class="link-chitiet">Bệnh viện mắt Sài Gòn</a>
+                                    </p>
+                                  <p>
+                                      BS CKII Nguyễn Trần Quốc Hoàng
+                                  </p>
+
+
+
+                        </div>
+                        <!-- Chia sẻ -->
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2>NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/tham-my-3.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Phẫu thuật hở mi
+                                        </a>
+                                        <p>Bệnh lý giác mạc do hở mi là một trong những trường hợp phổ biến của bệnh lý về mặt giác mạc. Cần tìm hiểu</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post col-md-6">
+                                    <img src="../public/img/tham-my-4.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Hở mi mắt: Nguy cơ mắc phải và cách điều trị</a>
+                                        <p>Hở mi mắt có khá nhiều nguyên nhân, cách điều trị còn phụ thuộc vào tác nhân gây bệnh </p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post col-md-6">
+                                <img src="../public/img/benh-mat-khac-15.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Bệnh võng mạc ở trẻ đẻ non</a>
+                                    <p>Bệnh võng mạc trẻ đẻ non được biết đến là một trong những nguyên nhân gây mù
+                                        lòa chính ở trẻ. Nếu không được khám</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post col-md-6">
+                                <img src="../public/img/benh-mat-khac-16.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Co giật mí mắt, điềm báo hay triệu chứng bệnh về mắt</a>
+                                    <p>Nhiều người vẫn cho rằng nếu bị giật mí mắt, nháy mắt liên tục là ‘điềm
+                                        báo’ một việc gì đó bất thường mang tính</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước
+                                        Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

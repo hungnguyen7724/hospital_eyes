@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Lé trong và những điều cần biết
+                            </h3>
+                            <div class="trangchitiet">
+                                <img src="../public/img/le-mat-2.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Lé trong là tình trạng mắt lệch về phía mũi. Bệnh có thể gặp ở mọi lứa tuổi, mọi giới.
+                                Mọi người có thể nhận biết lé trong dễ dàng khi thấy tròng đen lệch vào gần mũi hơn. Lé
+                                có thể bị một mắt hai cả hai mắt.
+                            </p>
+                            <p>Lé mắt trong có nhiều dạng:
+                            </p>
+                            <p>
+                                – Lé trong bẩm sinh
+                            </p>
+                            <p>
+                                – Lé trong cảm thụ
+                            </p>
+                            <p>
+                                – Lé trong hậu quả
+                            </p>
+                            <p>
+                                – Lé trong do có thắt điều tiết
+                            </p>
+                            <p>
+                                – Lé trong với chỉ số AC/A cao
+                            </p>
+
+                            <h1>Các loại lé trong thường gặp</h1>
+                            <h2>Lé trong bẩm sinh</h2>
+                            <div class="trangchitiet">
+                                <img src="../public/img/le-mat-5.png" alt="" class="img-fluid">
+                            </div>
+                            <p>Lé trong độ lớn (thường > 30 diop lăng kính) có thể gặp trong 6 tháng đầu của cuộc đời ở
+                                những đứa trẻ bình thường không có bất thường về khúc xạ và giới hạn vận động của nhãn
+                                cầu.</p>
+
+                            <p>
+                                Đôi khi có nhược thị đi kèm, cường cơ chéo bé, rung giật nhãn cầu tiềm ẩn hay DVD (lé
+                                phân ly theo hướng dọc)… Bệnh chiếm khoảng 2% ở trẻ < 6 tuổi. Tiền sử gia đình là một
+                                    yếu tố nguy cơ. </p>
+                                    <p>
+                                        Nguyên nhân bệnh sinh: Có nhiều nguyên cứu cho rằng do sự bất thường về cảm giác
+                                        thị giác 2 mắt ở giai đoạn sớm, gây ra tình trạng lé trong và những biến chứng
+                                        liên quan.
+                                    </p>
+                                    <p>Những bệnh lý liên quan thường gặp:</p>
+                                    <div class="text-list-chitiet">
+                                        <li>Rung giật nhãn cầu</li>
+                                        <li>Lé phân ly theo hướng dọc</li>
+                                        <li>Định thị chéo và suy giảm phân kỳ</li>
+                                    </div>
+
+                                    <!-- Lé trong bẩm sinh -->
+                                    <h4 style="font-style: italic;"> <span
+                                            style="font-style: italic;font-weight:200;">1.</span> Bệnh sử
+                                    </h4>
+                                    <p>Lé trong khởi phát từ khi mới sinh hay giai đoạn sớm sau sinh (< 6 tháng tuổi),
+                                            Giới hạn vận nhãn liếc ngoài 1 hoặc cả 2 mắt. Thường xuyên định thị chéo
+                                            giai đoạn sớm</p>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">2.</span> Lâm sàng
+                                            </h4>
+                                            <p>Lé trong độ lớn thường > 35 độ lăng kính, độ lé hằng định, tật khúc xạ
+                                                dưới + 2.0 D (bình thường ở độ tuổi này), các cơ quan khác ở mắt bình
+                                                thường. Định thị luân phiên 2 mắt , nếu không có, có thể do tồn tại
+                                                nhược thị. Chụp MRI sọ não được chỉ định trong trường hợp lé trong có
+                                                bất thường vận nhãn 1 hoặc 2 mắt, rung giật nhãn cầu biểu hiện.</p>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">3.</span> Chuẩn đoán
+                                                phân biệt
+                                            </h4>
+                                            <div class="text-list-chitiet">
+                                                <li>Duan type 1</li>
+                                                <li>Hội chứng Moebius</li>
+                                                <li>Liệt dây thần kinh số VI bẩm sinh</li>
+                                                <li>U hốc mắt</li>
+                                                <li>Hội chứng rung giật nhãn cầu có nút chặng</li>
+                                                <li>Hội chứng Cianca</li>
+                                            </div>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">4.</span> Điều trị
+                                            </h4>
+                                            <p>
+                                                Điều chỉnh trục nhãn cầu nên tiến hành trước 24 tháng tuổi để phục hồi
+                                                chức năng thị giác 2 mắt, một số dữ liệu cho thấy can thiệp phẫu thuật
+                                                sớm mang lại hiệu quả.
+                                            </p>
+                                            <p>
+                                                Lé trong phục hồi tự nhiên mà không cần phẫu thuật hiếm khi xãy ra. Phẫu
+                                                thuật lé trong thường lùi hai cơ trực trong ở 2 mắt, trường hợp độ lé
+                                                lớn có thể rút thêm cơ trực ngoài. Các phương pháp điều trị đi kèm:
+                                            <p>
+                                                – Điều trị viễn thị độ cao bằng kính gọng trước nhằm loại bỏ yếu tố diều
+                                                tiết .
+                                            </p>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">5.</span> Theo dõi bệnh
+                                                nhân
+                                            </h4>
+                                            <p>
+                                                – Theo dõi lâu dài những bệnh nhân lé tái phát, cường chéo dưới và DVD
+                                                có thể phẫu thuật bổ sung về sau
+                                            </p>
+                                            <p>
+                                                – Tỷ lệ phẫu thuật lần 2, ở bệnh nhân lé trong bẩm sinh khi 10 tuổi có
+                                                thể lên đến 50%
+                                            </p>
+                                            <p>
+                                                – Theo dõi bệnh nhân nhược thị và có tật khúc xạ
+                                            </p>
+                                            <p>
+                                                – Lé trong thứ phát do điều tiết có thể phát triển, cần được đeo kính
+                                            </p>
+                                            <p>
+                                                – Theo dõi lé tái phát , lé tồn dư, những dấu hiệu xuất hiện muộn
+                                            </p>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">6.</span> Tiên lượng
+                                            </h4>
+                                            <p>
+                                                – Thị lực thường tốt
+                                            </p>
+                                            <p>
+                                                – Khả năng phục hồi thị giác 2 mắt kém nếu không can thiệp sớm
+                                            </p>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">7.</span> Biến chứng
+                                            </h4>
+                                            <p>
+                                                – Nhược thị
+                                            </p>
+                                            <p>
+                                                Lé tái phát hay tồn dư cần phẫu thuật bổ sung
+                                            </p>
+
+
+
+                                            <!-- Lé trong điều tiết -->
+                                            <h1>Lé trong điều tiết</h1>
+                                            <div class="trangchitiet">
+                                                <img src="../public/img/le-mat-6.png" alt="" class="img-fluid">
+                                            </div>
+                                            <p>
+                                                Lé trong điều tiết là loại lé mà độ lé không thay đổi ở các hướng nhìn, khởi đầu có thể từng lúc sau đó trở thành thường xuyên. Bắt đầu khoảng 2 tuổi
+                                            </p>
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">1.</span> Những yếu tố nguy cơ.
+                                            </h4>
+                                            <p>– Thị lực thấp 1 hoặc 2 mắt</p>
+                                            <p>Sinh non</p>
+                                            <p>Chậm phát triển</p>
+                                            <p>Viễn thị nặng</p>
+
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">2.</span> Ngăn
+                                                ngừa
+                                                chung:
+                                            </h4>
+                                            <p>– Điều trị sớm viễn thị độ cao có thể giảm nguy cơ lé trong do
+                                                điều tiết
+                                            </p>
+                                            <p>
+                                                – Điều chỉnh viễn thị hợp lý đối với lé trong điều tiết sẽ giúp
+                                                ngăn
+                                                ngừa lé trong không do điều tiết phát triển.
+                                            </p>
+                                            <p>
+                                                – Điều chỉnh những nguyên nhân gây thị lực thấp ở 1 mắt hay 2
+                                                mắt
+                                            </p>
+                                            <h4 style="font-style: italic;"> <span
+                                                    style="font-style: italic;font-weight:200;">3.</span> Bệnh
+                                                sinh học:
+                                                <p>
+                                                    Do sự tăng cường nổ lực điều tiết để vượt qua viễn thị gây
+                                                    qui tụ
+                                                    quá mức.
+                                                </p>
+
+                                                <h4 style="font-style: italic;"> <span
+                                                        style="font-style: italic;font-weight:200;">4.</span>
+                                                    Những bệnh
+                                                    ly liên quan từng gặp:
+                                                </h4>
+                                                <p>
+                                                    - Tật khúc xạ(viễn thị)
+                                                </p>
+                                                <p>
+                                                    - Rung giật nhãn cầu tiềm ẩn, tiềm ẩn- biểu hiện, biểu hiện
+                                                </p>
+                                                <p>
+                                                    Rối loạn thần kinh, liệt não
+                                                </p>
+
+
+                                                <h4 style="font-style: italic;"> <span
+                                                        style="font-style: italic;font-weight:200;">5.</span>
+                                                    Khám lâm
+                                                    sàng:
+                                                </h4>
+                                                <p>
+                                                    – Khám mắt toàn diện bao gồm liệt điều tiết (atropin 2-3
+                                                    ngày trước
+                                                    khi khám để chắc chắn rằng đã liệt hoàn toàn)
+                                                </p>
+                                                <p>- Kiểm tra hình nổi</p>
+                                              
+                                                <p>
+                                                    – Đánh giá lé ở nhiều hướng nhìn và khoảng cách xa – gần (tỷ
+                                                    lệ điều
+                                                    tiết qui tụ với điều tiết, tỷ số AC/A)
+
+                                                <h4 style="font-style: italic;"> <span
+                                                        style="font-style: italic;font-weight:200;">6.</span>
+                                                    Chuẩn đoán
+                                                    phân biệt:
+                                                </h4>
+                                                <p>
+                                                    – Giả lé do nếp gấp mi tạo nên hình dạng lé trong nhưng thực sự không có lé, góc kappa (+)
+                                                </p>
+                                                <p>
+                                                    – Lé trong không ổn định
+                                                </p>
+                                                <p>
+                                                    – Lé trong do nhược cơthực hiện test Tensilon
+                                                </p>
+                                                <p>
+                                                    – Chụp hình MRI sọ não hốc mắt chỉ khi nghi ngờ có bệnh lý thần kinh: lé trong cấp tính, lé trong kèm theo các dấu hiệu thần kinh.
+                                                </p>
+                                                <h4 style="font-style: italic;"> <span
+                                                        style="font-style: italic;font-weight:200;">7.</span>
+                                                    Điều trị:
+                                                </h4>
+                                                <p>
+                                                    – Hội chẩn chuyên khoa thần kinh khi nghi ngờ bệnh lý sọ não
+                                                    hoặc
+                                                    nhược cơ
+                                                </p>
+                                                <p>
+                                                    – Đeo kính / contact lens sau liệt điều tiết toàn bộ những
+                                                    trường
+                                                    hợp lé trong điều tiết (< 4 tuổi và trẻ lớn hơn sử dụng atropin ngay
+                                                        từ khi bắt đầu đeo kính có thể giúp trẻ điều chỉnh hết độ viễn
+                                                        thị nếu không thể buông lỏng hết độ viễn thị tiềm ẩn) </p>
+                                                        <p>
+                                                            – Kính hai tròng có thể cần thiết cho những trường
+                                                            hợp tỉ lệ
+                                                            AC/A cao
+                                                        </p>
+                                                        <p>
+                                                            – Che mắt với miếng dán hoặc gia phạt bằng atropin
+                                                            điều trị
+                                                            nhược thị
+                                                        </p>
+                                                        <p>
+                                                            – Phẫu thuật lé được chỉ định trong trường hợp lé
+                                                            còn tồn
+                                                            tại sau 9 tháng đeokính. Phẫu thuật lé được thực
+                                                            hiện trên 1
+                                                            mắt (lùi/ rút cơ), 2 mắt (thường lùi 2 cơ trực
+                                                            trong)
+                                                        </p>
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">8.</span>
+                                                            Chăm sóc và theo dõi
+                                                        </h4>
+                                                        <p>
+                                                            – Đeo kính cực kỳ quan trọng đối với lé trong điều
+                                                            tiết toàn
+                                                            phần, mắt sẽ thẳng trục trở lại
+                                                        </p>
+                                                        <p>
+                                                            – Đối với lé trong điều tiết ổn định, theo dõi mỗi
+                                                            3-4 tháng
+                                                            để kiểm tra trục nhãn cầu và thị lực tùy thuộc vào
+                                                            sự ổn
+                                                            định của lé trong kiểm soát tốt.
+                                                        </p>
+                                                        <p>
+                                                            – Khám và đánh giá lại toàn bộ nếu lé trong thay đổi
+                                                        </p>
+                                                        <p>
+                                                            – Bệnh nhân có thể chú ý thấy song thị
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">9.</span>
+                                                            Biến chứng
+                                                        </h4>
+                                                        <p>Nhược thị</p>
+                                                        <p>
+                                                            – Phẫu thuật lé có thể thiểu chỉnh hoặc thặng chỉnh
+                                                        </p>
+
+                                                        <!-- Lé trong liên quan bệnh lý toàn thân -->
+                                                        <h1>Lé trong liên quan bệnh lý toàn thân</h1>
+                                                        <p>
+                                                            Là sự lệch trục thị giác biểu hiện độ lé khác nhau ở
+                                                            các
+                                                            hướng nhìn, là bệnh bẩm sinh hay mắc phải
+                                                        </p>
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">1.</span>
+                                                            Tần suất
+                                                        </h4>
+                                                        <p>
+                                                            Thay đổi tùy thuộc vào nguyên nhân gây lé, chiếm
+                                                            1-4% tổng
+                                                            số các trường hợp. Thường gặp ở người lớn
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">2.</span>
+                                                            Bệnh học
+                                                        </h4>
+                                                        <p>– Liệt dây thần kinh sọ não số VI</p>
+                                                        <p>
+                                                            – Thâm nhiễm cơ trực trong: bệnh lý tuyến giáp, giả
+                                                            u, bệnh
+                                                            bạch cầu
+                                                        </p>
+                                                        <p>
+                                                            – Bệnh nhược cơ
+                                                        </p>
+                                                        <p>
+                                                            – Kẹt cơ do chấn thương, co thắt: chấn thương hốc
+                                                            mắt (vở
+                                                            thành trong hốc mắt, tổn thương mỡ và mô sợi góc
+                                                            trong, xuất
+                                                            huyết thành ngoài hốc mắt), thâm nhiễm, u.
+                                                        </p>
+                                                        <p>
+                                                            – Phẫu thuật cơ vận nhãn nhãn (lùi quá mức cơ trực
+                                                            trong hay
+                                                            rút quá mức cơ trực ngoài). .
+                                                        </p>
+                                                        <p>
+                                                            – Bẩm sinh/yếu tố gen: thiểu sản cơ trực ngoài,hoặc
+                                                            bất
+                                                            thường cơ, bệnh lý sọ mặt có rối loạn phân bố thần
+                                                            kinh sọ
+                                                            não bẩm sinh: hội chứng Duan, hội chứng Moebius, hội
+                                                            chứng
+                                                            Brown.
+                                                        </p>
+                                                        <p>
+                                                            – Xơ sợi bẩm sinh cơ ngoại nhãn (thường gây lé
+                                                            ngoài)
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">3.</span>
+                                                            Bệnh sử
+                                                        </h4>
+                                                        <p>
+                                                            Song thị theo hướng ngang, song thị càng tăng khi
+                                                            nhìn
+                                                            xa, liếc ra ngoài
+                                                        </p>
+                                                        <p>
+                                                            – Chấn thương hốc mắt
+                                                        </p>
+                                                        <p>
+                                                            – Tiền sử nhiễm trùng trước đó, chấn thương đầu,
+                                                            phẫu
+                                                            thuật mắt
+                                                        </p>
+                                                        <p>
+                                                            – Tiền sử gia đình có khiếm khuyết nhân dây thần
+                                                            kinh
+                                                            sọ, bệnh lý phân bố bất thường các dây sọ não, bệnh
+                                                            lý
+                                                            sọ mặt
+                                                        </p>
+                                                        <p>
+                                                            – Cường giáp hay nhược cơ
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">4.</span>
+                                                            Khám lâm sàng
+                                                        </h4>
+                                                        <p>
+                                                            – Nhược thị ở trẻ em
+                                                        </p>
+                                                        <p>
+                                                            – Bất thường tư thế đầu
+                                                        </p>
+                                                        <p>
+                                                            – Mất thị giác hai mắt
+                                                        </p>
+                                                        <p>
+                                                            - Song thị
+                                                        </p>
+                                                        <p>
+                                                            + Khám vận nhãn đầy đủ và chú ý cơ ngoại nhãn, trục
+                                                            nhãn
+                                                            cầu ở 9 vị trí nhìn (lên, xuống, trong, ngoài, lên
+                                                            phải,
+                                                            lên trái, xuống phải, xuống trái) khi nhìn gần.
+                                                        </p>
+                                                        <p>
+                                                            + Đo độ lé trong, tăng lên ở hướng liếc ngoài
+                                                        </p>
+                                                        <p>
+                                                            + Xác định kiểu định thị và thị lực sau khi chỉnh
+                                                            kính
+                                                            (đã liệt điều tiết)
+                                                        </p>
+                                                        <p>
+                                                            + Khám thần kinh sọ não và thị giác 2 mắt
+                                                        </p>
+                                                        <p>
+                                                            + Test cưỡng bức cơ (nếu cần thiết) để phân biệt rối
+                                                            loạn chức năng cơ trực trong hay cơ trực ngoài, phân
+                                                            biệt liệt cơ hay co thắt cơ.
+                                                        </p>
+                                                        <p>
+                                                            + Sụp mi và co thắt mi có thể thấy trong bệnh lý
+                                                            tuyến
+                                                            giáp
+                                                        </p>
+                                                        <p>
+                                                            + Đánh giá sự bất thường vị trí đầu(thường lộ rõ) để
+                                                            có
+                                                            thị giác 2 mắt
+                                                        </p>
+                                                        <p>
+                                                            + Liệt dây VI bẩm sinh 2 bên, liệt dây VII trong hội
+                                                            chứng Moebius, đánh giá liệt các dây thần kinh sọ
+                                                            não,
+                                                            khiếm khuyết cổ, lưỡi, ngực, các xương sườn.
+                                                        </p>
+                                                        <p>
+                                                            + Hạn chế liếc ngoài dokhiếm khuyết bẩm sinh dây
+                                                            thần
+                                                            kinh phân bố cho cơ trực ngoài trong hội chứng Duan
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">5.</span>
+                                                            Test chẩn đoán và can thiệp
+                                                        </h4>
+                                                        <p>
+                                                            Kiểm tra chức năng tuyến giáp khi nghi ngờ có bệnh
+                                                            lý
+                                                            nhãn giáp, kháng thể của receptor Acetylcholin khi
+                                                            nghi
+                                                            có nhược cơ. Thậm chí nếu kết quả kiểm tra chức năng
+                                                            tuyến giáp hay nhược cơ trong giới hạn bình thường
+                                                            thì
+                                                            vẫn cho kiểm tra lại sau một thời gian khi lâm sàng
+                                                            vẫn
+                                                            có biểu hiện nghi ngờ bệnh
+                                                        </p>
+
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">6.</span>
+                                                            Chẩn đoán hình ảnh
+                                                        </h4>
+                                                        <p>
+                                                            Nếu khởi phát cấp tính hay có dấu hiệu và triệu
+                                                            chứng
+                                                            thần kinh thì chụp hình sọ não là cần thiết để loại
+                                                            trừ
+                                                            bệnh lý nội sọ. CT scan hốc mắt nếu nghi ngờ bệnh lý
+                                                            tuyến giáp tại mắt để loại trừ u hốc mắt, gãy xương,
+                                                            thâm nhiễm hay nhiễm trùng. CT scan kiểm tra gãy
+                                                            xương
+                                                            hốc mắt, siêu âm B hốc mắt đôi khi hữu ích
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">7.</span>
+                                                            Chẩn đoán phân biệt
+                                                        </h4>
+                                                        <p>
+                                                            – Lé trong (điều tiết hay không điều tiết)
+                                                        </p>
+                                                        <p>
+                                                            – Giả suy giảm phân kỳvới lé trong bẩm sinh độ
+                                                            lớn,định
+                                                            thị chéo
+                                                        </p>
+                                                        <p>
+                                                            – Góc kappa (+)
+                                                        </p>
+                                                        <p>
+                                                            – Viễn thị 2mắt không đều, độ lé khác nhau do thay
+                                                            đổi
+                                                            định thị giữa 2 mắt
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">8.</span>
+                                                            Điều trị
+                                                        </h4>
+                                                        <h5 style="font-style: italic;font-weight: 500;">Điều
+                                                            trị hỗ
+                                                            trợ</h5>
+                                                        <p>
+                                                            - Ngừng hút thuốc lá khi có bệnh tuyến giáp
+                                                        </p>
+                                                        <p>
+                                                            –Che một mắt, sử dụng tư thế đầu để hạn chế triệu
+                                                            chứng
+                                                            song thị, hay sử dụng lăng kính Fresnel để điều
+                                                            chỉnh
+                                                            song thị ở hướng nguyên phát.
+                                                        </p>
+                                                        <p>
+                                                            – Che mắt điều trị nhược thị khi có chỉ định
+                                                        </p>
+                                                        <p>
+                                                            Lé trong phục hồi hoàn toàn mà không can thiệp
+                                                            thường
+                                                            gặp trong liệt dây VI nếu liệt do bệnh lý mạch máu
+                                                            hay
+                                                            tăng áp lực sọ não, phù não gây ra.
+                                                        </p>
+
+                                                        <h5 style="font-style: italic;font-weight: 500;">Thuốc
+                                                        </h5>
+                                                        <p>
+                                                            Steroid toàn thân điều trị viêm hốc mắt hay kết
+                                                            hợpMestinon điều trị lé do bệnh nhược cơ. Điều trị
+                                                            thuốc
+                                                            cho tăng áp lực sọ não hay phù não
+                                                        </p>
+
+                                                        <h5 style="font-style: italic;font-weight: 500;">Phẫu
+                                                            thuật
+                                                            hay thủ thuật</h5>
+                                                        <p>
+                                                            – Phẫu thuật lé trong do liệt dây thần kinh số VI
+                                                            hay
+                                                            bệnh lý tuyến giáp khi bệnh không thoái lui tự nhiên
+                                                            sau
+                                                            6 tháng
+                                                        </p>
+                                                        <p>
+                                                            – Tiêm Botox vào cơ trực trong có thể hữu ích khi
+                                                            liệt
+                                                            dây VI do chấn thương
+                                                        </p>
+                                                        <p>
+                                                            – Di chuyển vị trí cơ khi có liệt dây VI toàn bộ
+                                                        </p>
+                                                        <p>
+                                                            – Lùi trực trong cho bệnh lý tuyến giáp tại mắt
+                                                        </p>
+                                                        <p>
+                                                            – Vỡ xương hốc mắt có thể cần phẫu thuật giải phóng
+                                                            mô
+                                                            bị kẹt và sửa xương gãy
+                                                        </p>
+                                                        <p>
+                                                            – Can thiệp phẫu thuật thần kinh khi bệnh tiến triển
+                                                            nếu
+                                                            có chỉ định
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">9.</span>
+                                                            Theo dõi
+                                                        </h4>
+                                                        <p>Rất hữu ích khi tái khám, theo dõi những trường hợp
+                                                            độ lé
+                                                            thay đổi do bệnh tuyến giáp và bệnh nhược cơ, song
+                                                            thị
+                                                            do liệt dây VI/chấn thương . Độ lé ổn định là rất
+                                                            quan
+                                                            trọng trước khi can thiệp phẫu thuật chỉnh lé. Cha
+                                                            mẹ
+                                                            trẻ bị lé nên giáo dục trẻ nguy cơ phát triển nhược
+                                                            thị
+                                                            và mất chức năng thị giác 2 mắt, cần tái khám theo
+                                                            dõi
+                                                            chặt, thường xuyên thị lực.
+                                                        </p>
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">10.</span>
+                                                            Tiên lượng
+                                                        </h4>
+                                                        <p>
+                                                            Tùy thuộc vào loại lé, một sốtrường hợp có thể cải
+                                                            thiện
+                                                            sau phẫu thuật. Trong trường hợp khiếm khuyết nhân
+                                                            dây
+                                                            thần kinh sọ bẩm sinh, mục đích đầu tiên của phẫu
+                                                            thuật
+                                                            là cải thiện tư thế đầu và chỉnh thị ở vị trí nguyên
+                                                            phát. Liệt dây VI thường phục hồi tự nhiên trong
+                                                            trường
+                                                            hợp tăng áp lực sọ não
+                                                        </p>
+
+                                                        <h4 style="font-style: italic;"> <span
+                                                                style="font-style: italic;font-weight:200;">11.</span>
+                                                            Các biến chứng do lé trong thứ phát
+                                                        </h4>
+                                                        <p>
+                                                            – Nhược thị ở trẻ em
+                                                        </p>
+                                                        <p>
+                                                            – Bất thường tư thế đầu
+                                                        </p>
+                                                        <p>
+                                                            – Mất thị giác hai mắt
+                                                        </p>
+                                                        <p>
+                                                            – Song thị
+                                                        </p>
+                                                        <p style="text-align: right;">Bệnh viện mắt
+                                                            Sài Gòn</a>
+                                                        </p>
+                                                        <p style="text-align: right;">
+                                                            Bác sĩ: Lê Thục Nhi
+                                                        </p>
+                                                        Tài liệu tham khảo: <br>
+                                                        <div class="tai-lieu-tham-khao">
+                                                            <p>
+                                                                Willseye Isntitute -
+                                                                <a href="https://www.willseye.org/">https://www.willseye.org/
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                </p>
+                        </div>
+                        <!-- Chia sẻ -->
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2>NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-3.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Loạn thị nguyên nhân triệu chứng và cách điều trị
+                                        </a>
+                                        <p>Tật loạn thị có thể gặp ở mọi lứa tuổi, cả trẻ em và người trưởng thành. Loạn
+                                            thị có thể di truyền nên nhiều</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-4.png" -my-4.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Viễn thị – nguyên nhân và cách điều trị</a>
+                                        <p>Viễn thị (Hyperopia, Hypermetropia, Farsightedness) là một vấn đề thị giác
+                                            phổ biến. Những người bị viễn thị có thể nhìn thấy những vật ở</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-5.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Lão thị và những điều cần biết
+                                        </a>
+                                        <p>Lão thị là gì? Lão thị là tật khúc xạ gây ra sự sụt giảm thị lực ở thị giác
+                                            gần từ khoảng 40 tuổi.</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-2.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Cận thị nguyên nhân và cách điều trị</a>
+                                        <p>Cận thị là một trong những điều phiền toái ảnh hưởng không nhỏ đến cuộc sống
+                                            hàng ngày của chúng ta. Nhưng liệu chúng ta có đủ kiến thức về nguyên nhân
+                                            và cách chữa bệnh cận thị hay không?</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước
+                                        Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

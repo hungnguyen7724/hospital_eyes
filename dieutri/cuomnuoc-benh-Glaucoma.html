@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Bệnh Glaucoma (cườm nước) nguyên nhân và cách điều trị</h3>
+                            <div class="trangchitiet">
+                                <img src="../public/img/phau-thuat-cuom-nuoc.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Glaucoma thường xảy ra khi chất lỏng trong mắt không thể thoát ra ngoài, làm tăng áp lực bên trong mắt và gây áp lực lên dây thần kinh thị giác. Bệnh khá phổ biến, tuy nhiên bệnh không có triệu chứng trong giai đoạn đầu, vì thế rất khó nhận ra.</p>
+                            <p>
+                                Chứng tăng nhãn áp có thể ảnh hưởng đến mọi lứa tuổi, kể cả trẻ sơ sinh và trẻ nhỏ, nhưng phổ biến nhất ở người lớn ở độ tuổi 70 và 80.
+                            </p>
+                            
+                            <h2>Glaucoma là gì?</h2>
+                            <p>Glaucoma là một nhóm các bệnh gây tổn thương không hồi phục thần kinh thị giác và có thể dẫn đến mất thị lực và mù lòa. Các dây thần kinh thị giác là một bó với hơn 1 triệu sợi thần kinh có nhiệm vụ kết nối võng mạc vào não. 
+                            </p>
+                            <p>
+                                Tuy nhiên, nếu được phát hiện sớm và   điều trị đúng có thể ngăn chặn sự tiến triển của bệnh, bệnh nhân có thể tránh khỏi mất thị lực và thị trường nghiêm trọng.
+                            </p>
+                            <div class="trangchitiet">
+                                <img src="../public/img/phau-thuat-cuom-nuoc.png" alt="" class="img-fluid">
+                            </div>
+                            <h2>Nguyên nhân gây Glaucoma</h2>
+                            <p>
+                                Bệnh Glaucoma không có nguyên nhân rõ ràng nhưng có liên quan đến sự tăng áp lực trong mắt và/hoặc giảm lưu lượng máu  nuôi dưỡng dây thần kinh thị giác.
+                            </p>
+                            <p>
+                                Điều này có thể do bẩm sinh hoặc do tổn thương bên trong mắt. Tăng áp suất thủy dịch có thể dẫn tới bệnh Glaucoma tuy nhiên không phải ai cũng bị Glaucoma khi mắc chứng tăng áp suất thủy dịch. Một số nguyên nhân khác có thể làm tăng nguy cơ mắc bệnh Glaucoma bao gồm:
+                            </p>
+                            <p>
+                                Tuổi tác: khoảng 10 người trên 75 tuổi có 1 người bị mắc bệnh Glaucoma.
+                            </p>
+                            <p>
+                                Dân tộc: những người có nguồn gốc châu Phi, Caribbean hoặc châu Á có nguy cơ cao bị bệnh Glaucoma hơn những người ở nơi khác.
+                            </p>
+                            <p>
+                                Di truyền 
+                            </p>
+                            <p>
+                                Việc thường xuyên kiểm tra mắt định kỳ sẽ giúp phát hiện và ngăn ngừa bệnh Glaucoma 
+                            </p>
+                            <h1>Các loại bệnh Glaucoma</h1>
+
+                            <h2>Glaucoma góc mở</h2>
+                            <p>
+                                Đây là hình thức phổ biến nhất của bệnh Glaucoma. Người bị bệnh Glaucoma góc mở bị tắc nghẽn không hoàn toàn ở góc thoát thuỷ dịch của mắt khiến tăng áp suất mắt.
+                            </p>
+                            <p>
+                                Điều này lâu ngày sẽ khiến các dây thần kinh thị giác bị tổn thương. Quá trình này diễn ra từ từ và không gây đau đớn. Điều này khiến bệnh nhân khó nhận biết được triệu chứng bệnh.
+                            </p>
+                            <div class="trangchitiet">
+                                <img src="../public/img/glaucoma-1.png" alt="" class="img-fluid">
+                            </div>
+
+                            <h2>Glaucoma góc đóng</h2>
+                            <p>Glaucoma góc đóng hay tăng nhãn áp góc đóng hay dân gian gọi là thiên đầu thống. Bệnh xảy ra khi góc thoát thuỷ dịch của mắt bị đóng hoàn toàn.</p>
+                            <p>
+                                Điều này khiến cho mắt bị gia tăng áp suất đột ngột, rất nguy hiểm cho bệnh nhân. Người bị Glaucoma góc đóng thường đau mắt, đau đầu, xuất hiện quầng sáng xung quanh khi nhìn vào bóng đèn, buồn nôn… Khi gặp phải các triệu chứng này, cần đưa người bệnh đi đến bệnh viện ngay.
+                            </p>
+                            <h2>Các dạng bệnh Glaucoma</h2>
+
+                            <p>– Exfoliation syndrome (hội chứng giả bong bao): giống như tăng nhãn áp góc mở nhưng các chất màu trắng trên thủy tinh thể và góc thoát thủy dịch bị tích tụ bất thường. Những chất này kết hợp với các sắc tố từ phía sau mống mắt khiến kênh thoát thuỷ dịch bị tắc nghẽn. </p>
+
+                            <p>– Bệnh tăng nhãn áp sắc tố: bệnh thường gặp ở người mắc chứng cận thị hoặc trẻ em. Người bệnh bị tắc kênh thoát thủy dịch của mắt do các hạt sắc tố bị vỡ từ các tế bào lót mặt sau của mống mắt.
+                            </p>
+
+                            <h2>Triệu chứng bệnh Glaucoma</h2>
+                            <div class="trangchitiet">
+                                <img src="../public/img/glaucoma-2.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Trong giai đoạn đầu, bệnh tăng nhãn áp không có triệu chứng, không gây đau, tầm nhìn vẫn bình thường. Chứng tăng nhãn áp có thể phát triển ở một hoặc cả hai mắt.
+                            </p>
+                            <p>
+                                Nếu không điều trị, người bị tăng nhãn áp sẽ dần dần mất đi tầm nhìn ngoại vi, giống như đang nhìn qua một đường hầm. Theo thời gian, tầm nhìn thẳng về phía trước có thể giảm xuống cho đến khi không còn tầm nhìn. Chứng tăng nhãn áp có thể được phát hiện khi:
+                            </p>
+                            <p>
+                                – Kiểm tra thị lực. Thử nghiệm biểu đồ mắt giúp đo lường mức độ bạn nhìn thấy ở những khoảng cách khác nhau.
+                            </p>
+                            <p>
+                                – Kiểm tra khả năng nhìn ngoại vi: kiểm tra tầm nhìn ngoại vi giúp bác sĩ xác nhận triệu chứng mất tầm nhìn ngoại vi một dấu hiệu của bệnh tăng nhãn áp.
+                            </p>
+                           <p>
+                            – Kiểm tra giác mạc là phương pháp đo độ dày của giác mạc.
+                           </p>
+
+                           <h2>Điều trị Glaucoma</h2>
+                            <div class="trangchitiet">
+                                <img src="../public/img/glaucoma-3.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Điều trị sớm có thể làm chậm sự tiến triển của bệnh, đó là lý do tại sao chẩn đoán bệnh sớm rất quan trọng. Các biện pháp điều trị tăng nhãn áp bao gồm thuốc, phẫu thuật tạo hình bằng tia laser, phẫu thuật thông thường.
+                            </p>
+                            <p>
+                                – Các loại thuốc, dưới dạng thuốc nhỏ mắt hoặc thuốc viên, làm giảm áp lực cho mắt bằng cách giúp chất lỏng thoát ra từ mắt. Trước khi bắt đầu sử dụng thuốc, phải được sự đồng ý của các bác sĩ chuyên khoa mắt để tránh tác dụng phụ.
+                            </p>
+                            <p>
+                                Vì bệnh tăng nhãn áp thường không có triệu chứng, nên bệnh nhân thường ngưng uống hoặc quên uống thuốc. Nếu quyết định sử dụng thuốc, hãy lên một lịch trình uống thuốc cụ thể.
+                            </p>
+                            <p>
+                                – Phẫu thuật bằng Laser: Bác sĩ sẽ dùng laser argon để tạo hình vùng bè (trabeculoplasty), quá trình lành vết thương sẽ co kéo lớp sợi collagen vùng bè làm tăng thoát lưu thủy dịch.
+                            </p>
+                            <p>
+                                – Phẫu thuật thông thường: tạo cho một lỗ hở cho chất dịch ra khỏi mắt. Bác sĩ sử dụng các công cụ phẫu thuật để tạo ra một lỗ nhỏ dưới kết mạc (lớp xung quanh mắt). Các chất lỏng tích tụ có thể chảy qua lỗ, và sau đó hấp thụ vào máu.
+                            </p>
+
+                            <h2>Phòng ngừa Glaucoma</h2>
+                            <p>
+                                Không có phương pháp nào phòng ngừa bệnh tăng nhãn áp. Tuy nhiên nếu được chuẩn đoán và điều trị sớm có thể làm chậm và ngăn chặn tổn thương thần kinh thị giác. Nếu không điều trị, bệnh tăng nhãn áp có thể dẫn đến mù loà.
+                            </p>
+                            <p>
+                                – Glaucoma góc mở không thể phòng ngừa, nhưng nếu được chuẩn đoán và sớm điều trị có thể ngăn ngừa suy giảm thị lực.
+                            </p>
+                            <p>
+                                – Glaucoma góc đóng, có khả năng phòng ngừa. Một thủ thuật cắt mống mắt chu biên được thực hiện trong giai đoạn đầu của bệnh (khi mắt có góc đóng, nhưng vẫn chưa phát triển thành bệnh tăng nhãn áp) sẽ giúp ngăn ngừa mù lòa.
+                            </p>
+                            <p>
+                                Thường xuyên đi khám mắt 1 đến 2 lần trong một năm để phát hiện những dấu hiệu bệnh Glaucoma và các bệnh về mắt khác. Luôn chọn bệnh viện mắt uy tín để khám và điều trị các bệnh về mắt. Hiện bệnh viện mắt Sài Gòn là một trong những bệnh viện uy tín, chuyên chữa trị các bệnh về mắt. Với hơn 15 năm phát triển, bệnh viện đã nhận được sự tín nhiệm của người dân trong nước và kiều bào nước ngoài. 
+                            </p>
+
+                            <p style="text-align: right;">
+                                <a href="#" class="link-chitiet">Bệnh viện mắt Sài Gòn</a>
+                            </p>
+                            <p style="text-align: right;">
+                                Ths.BS Nguyễn Trần Quốc Hoàng
+                            </p>
+                            <p>
+                            
+
+                        </div>
+                        <!-- Chia sẻ -->
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2>NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/dt-khuc-xa-1.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a
+                                            href="./hoi-dap-xoay-quanh-cac-phuong-phap-phau-thuat-laser-xoa-can-vien-loan-pho-bien-hien-nay.html">Phẫu
+                                            thuật mí đôi Hỏi đáp các phương pháp phẫu thuật LASER xóa cận – viễn – loạn
+                                            phổ biến hiện nay</a>
+                                        <p>Rời bỏ vướng bận từ cặp kính cận là mơ ước của rất nhiều người khi phải sống
+                                            chung cùng tật khúc xạ. Phẫu thuật</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post col-md-6">
+                                    <img src="../public/img/benh-mat-khac-15.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Bệnh võng mạc ở trẻ đẻ non</a>
+                                        <p>Bệnh võng mạc trẻ đẻ non được biết đến là một trong những nguyên nhân gây mù
+                                            lòa chính ở trẻ. Nếu không được khám</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post col-md-6">
+                                <img src="../public/img/dt-khuc-xa-2.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="./can-thi-nguyen-nhan-va-cah-dieu-tri.html">
+                                        Cận thị nguyên nhân và cách điều trị</a>
+                                    <p>Cận thị là một trong những điều phiền toái ảnh hưởng không nhỏ đến cuộc sống
+                                        hàng ngày của chúng ta. Nhưng liệu chúng ta có đủ kiến thức về nguyên nhân
+                                        và cách chữa bệnh cận thị hay không?</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post col-md-6">
+                                <img src="../public/img/tham-my-4.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Hở mi mắt: Nguy cơ mắc phải và cách điều trị</a>
+                                    <p>Hở mi mắt có khá nhiều nguyên nhân, cách điều trị còn phụ thuộc vào tác nhân gây bệnh </p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước
+                                        Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

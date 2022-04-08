@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hospital</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../public/css/dichvu.css">
+
+
+</head>
+
+<body>
+    <div class="top-header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand header-img" href="#">
+                <img src="../public/img/logo-hospital.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TREAMENT ĐIỀU TRỊ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./cac-tat-khuc-xa.html">Các tật khúc xạ</a></li>
+                            <li><a class="dropdown-item" href="./duc-thuy-tinh-the.html">Đục thủy tinh thể</a></li>
+                            <li><a class="dropdown-item" href="./le-mat.html">Lé mắt</a></li>
+                            <li><a class="dropdown-item" href="./cuom-nuoc.html">Cườm nước</a></li>
+                            <li><a class="dropdown-item" href="./viem-ket-mac.html">Viêm kết mạc</a></li>
+                            <li><a class="dropdown-item" href="./benh-ve-mat-khac-1.html">Bệnh về mắt khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RESEARCH NGHIÊN CỨU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-1.html">Nghiên cứu 1</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-2.html">Nghiên cứu 2</a></li>
+                            <li><a class="dropdown-item" href="../nghiencuu/nghien-cuu-3.html">Nghiên cứu 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TRAINING ĐÀO TẠO
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-1.html">Đào tạo 1</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-2.html">Đào tạo 2</a></li>
+                            <li><a class="dropdown-item" href="../daotao/dao-tao-3.html">Đào tạo 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-1.html">Sản phẩm 1</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-2.html">Sản phẩm 2</a></li>
+                            <li><a class="dropdown-item" href="../sanpham/san-pham-3.html">Sản phẩm 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICE DỊCH VỤ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../dichvu/khammat.html">Khám mắt</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô
+                                    Phaco</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật
+                                    cườm nước Glaucoma</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị
+                                    lác (lé)</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác
+                                    mạc</a></li>
+                            <li><a class="dropdown-item" href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEWS TIN TỨC
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../tintuc/tin-khuyen-mai.html">Tin khuyến mại</a></li>
+                            <li><a class="dropdown-item" href="../tintuc/tin-truyen-thong-1.html">Tin truyền thông</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../tintuc/doi-mat-khoe.html">Chuyện của những đôi mắt
+                                    khỏe </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT LIÊN HỆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../lienhe/lien-he.html">Liên hệ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="calendar">
+                    <a href="">ĐẶT LỊCH KHÁM</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+    <div class="text-gioithieuchung">
+        <div class="container">
+            <div class="row">
+                <div class="noidung">
+                    <div class="col-md-8">
+                        <div class="post-chitiet">
+                            <h3>Glocom nhãn áp không cao: Căn bệnh dễ gây mù lòa
+                            </h3>
+                            <div class="trangchitiet">
+                                <img src="../public/img/cuom-nuoc-2.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Glocom nhãn áp không cao là căn bệnh về mắt nguy hiểm vì nó làm giảm và mất thị lực của
+                                người bệnh mà không có khả năng hồi phục.
+                            </p>
+                            <h2>Glocom nhãn áp không cao là gì?</h2>
+                            <p>Glocom nhãn áp không cao là một hình thái đặc biệt của glocom góc mở, triệu chứng rất ít,
+                                không có đau nhức mắt, đau nhức đầu, nhãn áp không cao, triệu chứng cơ năng duy nhất là
+                                nhìn mờ, do vậy, chúng ta thường ít nghĩ đến bệnh glocom. Do vậy việc chẩn đoán bệnh
+                                glocom nhãn áp không cao thường rất khó khăn và được chẩn đoán muộn
+                            </p>
+                            <p>
+                                Glocom nhãn áp không cao được mô tả lần đầu tiên bởi Albrecht Von Graefe vào năm 1857,
+                                là một hình thái glocom góc mở nguyên phát trong đó không có nhãn áp cao.
+                            </p>
+                            <p>
+                                Theo quan điểm hiện nay thì glocom nhãn áp không cao không chỉ đơn thuần là bệnh lý của
+                                thị thần kinh mãn tính mà nó còn kết hợp sự bất thường của đĩa thị, dẫn đến thay đổi thị
+                                trường mà nhãn áp vẫn trong giới hạn bình thường. Như vậy sự khác nhau giữa glocom góc
+                                mở nguyên phát và glocom nhãn áp không cao là nhãn áp cao mà thôi.
+                            </p>
+
+                            <h2>Nguy cơ mắc bệnh Glocom nhãn áp không cao</h2>
+                            <p>
+                                Bệnh Glocom nhãn áp không cao là bệnh của người già, đa số các bệnh nhân trên 50 tuổi,
+                                thường gặp ở nữ nhiều hơn nam, đặc biệt là những người có bệnh xơ hóa tuổi già.
+                            </p>
+                            <p>Bệnh Glocom nhãn áp không cao có yếu tố nguy cơ chính là mạch máu như cao huyết áp, bệnh
+                                đái tháo đường, huyết áp thấp vào ban đêm, những hội chứng gây co thắt mạch hội chứng
+                                migraine, hội chứng Raynaud…, gần đây có hội chứng hạ huyết áp khi ngủ.
+                            </p>
+                            <p>Yếu tố gia đình: Cũng như bệnh Glocom nói chung, bệnh Glocom nhãn áp không cao có tính
+                                chất gia đình, người ta tìm thấy một số gen có liên quan đến bệnh.
+                            </p>
+                            <p>
+                                Chủng tộc: Glocom nhãn áp không cao gặp nhiều ở các nước châu Á, trong khi đó thì người
+                                da đen gặp glocom nhãn áp cao nhiều hơn, và Nhật Bản tỉ lệ bệnh gloocom nhãn áp không
+                                cao nhiều hơn các nước khác.
+                            </p>
+
+                            <h2>Triệu chứng của bệnh Glocom nhãn áp không cao</h2>
+                            <p>
+                                Glocom nhãn áp không cao thường có diễn biến không triệu chứng, trừ những trường hợp tổn
+                                hại thị trường muộn, tổn hại thị trường nhiều.
+                            </p>
+                            <p>
+                                Theo dõi bệnh nhân glocom nhãn áp không cao, thấy sự dao động nhãn áp mà đỉnh dưới
+                                21mmHg. Cần lưu ý đến nhãn áp đích, là ngưỡng mà khi vượt quá ngưỡng này sẽ gây ra tổn
+                                hại thị thần kinh và tổn hại chức năng thị giác như thị lực và thị trường. Cần lập biểu
+                                đồ theo dõi sự thay đổi nhãn áp trong ngày để giúp chẩn đoán xác định glocom nhãn áp
+                                không cao. Hiện nay, có thể theo dõi nhãn áp theo những giờ nhất định bằng cách sử dụng
+                                nhãn áp kế bút điện tử để theo dõi nhãn áp.
+                            </p>
+                            <p>
+                                Bệnh biểu hiện rõ nhất ở gai thị với các triệu chứng cụ thể như:
+                            </p>
+                            <p>– Tổn hại gai thị không có sự khác biệt với các loại glocom khác như tỉ lệ C/D lớn, tổn
+                                hại lớp viền thần kinh đĩa thị giác, thay đổi mạch máu của đĩa thị giác …
+                            <p>
+                            <p>
+                                – Tuy nhiên, trong glocom nhãn áp không cao tổn hại gai thị cũng có 1 số đặc điểm riêng:
+                            </p>
+                            <p>
+                                – Lớp viền thần kinh quanh gai thị mỏng hơn so với glocom nhãn áp cao.
+                            </p>
+                            <p>
+                                – Lõm gai không quá sâu và lớp lá sàng ít bị đấy ra phía sau hơn.
+                            </p>
+                            <p>
+                                – Hay gặp tổn hại viền thần kinh gai thị khu trú ở 1 vị trí kèm theo lõm gai thị sâu và
+                                thay đổi lớp lá sàng tạo thành hố gai thị mắc phải, 75% gặp ở glocom nhãn áp không cao
+                                so với 15% ở glocom nhãn áp cao.
+                            </p>
+                            <p>
+                                Các triệu chứng khác đi kèm như:
+                            </p>
+                            <p>
+                                – Một trong những dấu hiệu thường gặp nhất của bệnh là teo võng mạc cạnh gai thị (vùng α
+                                và vùng β).
+                            </p>
+                            <p>
+                                – Thường xuất huyết gai thị
+                            </p>
+                            <p>
+                                – Tổn hại lớp sợi thần kinh quanh gai thị: hay gặp tổn hại lớp sợi thần kinh khu trú ở 1
+                                vị trí nào đó hơn là tổn hại toàn bộ chu vi gai thị.
+                            </p>
+                            <p>
+                                – Tuy nhiên, những dấu hiệu trên không đặc hiệu cho glocom nhãn áp không cao.
+                            </p>
+                            <p>
+                                – Bệnh Glocom nhãn áp không cao nếu không được điều trị sẽ ngày càng tiến triển nặng,
+                                biểu hiện thị lực ngày càng giảm, thị trường ngày càng thu hẹp, cuối cùng có thể dẫn đến
+                                mù lòa không thể hồi phục được.
+                            </p>
+
+                            <h2>Cần phân biệt với những loại glocom khác</h2>
+                            <p>
+                                Phân biệt với glocom nhãn áp cao đã được điều trị: đã sử dụng các thuốc hạ nhãn áp như
+                                thuốc ức chế β, ức chế men chuyển…Với glocom nhãn áp thay đổi: là glocom góc mở do sự
+                                dao động lớn của nhãn áp. Khi đo vào lúc nhãn áp thấp dễ lầm tưởng với glocom nhãn áp
+                                không cao. Cần phải theo dõi chặt chẽ nhãn áp và lập đồ thị theo dõi nhãn áp trong ngày.
+                            </p>
+                            <p>
+                                Glocom nhãn áp cao đã được điều trị ổn định: trước đó đã từng có nhãn áp cao như glocom
+                                do cortison. Đặc điểm là thị trường ổn định.
+                            </p>
+                            <p>
+                                Phân biệt với bệnh lý thị thần kinh không phải do glocom. Tổn hại do chèn ép đường thị
+                                giác: Một số teo thị thần kinh do thoái hóa sợi trục thần kinh cũng gây ra lõm gai như
+                                trong bệnh glocom, nhưng trong trường hợp này gai thị bạc màu (teo gai thị). Bệnh thị
+                                thần kinh thiếu máu: lõm teo gai thị giống như trong bệnh glocom nhưng thị trường ổn
+                                định, không tiến triển.
+                            </p>
+
+                            <h2>Điều trị bệnh Glocom nhãn áp không cao</h2>
+                            <p>
+                                Đạt được nhãn áp đích: điều trị hạ nhãn áp đến khi bệnh không tiến triển nặng hơn, mức
+                                độ hạ nhãn áp khác nhau tùy thừng bệnh nhân. Tuy nhiên, mức độ hạ nhãn áo tối thiểu là
+                                30% áp nhãn áp của bệnh nhân.
+                            </p>
+                            <p>Xác định những yếu tố nguy cơ mắc phải và kiểm soát chúng:</p>
+                            <p>Phát hiện cao huyết áp và điều trị cao huyết áp, không dùng thuốc co mạch.</p>
+                            <p>Phát hiện huyết áp thấp.</p>
+                            <p>
+                                Thường xuyên theo dõi tiến triển của bệnh.
+                            </p>
+                            <p>
+                                Có thể dùng được tất cả các loại thuốc hạ nhãn áp trừ thuốc ức chế beta không chon lọc
+                                do có tác dung gây co mạch. Prostagladine, laser vùng bè, phẫu thuật lỗ dò…
+                            </p>
+                            <p>
+                                Chỉ định: không có chỉ định cụ thể, ưu tiên dùng thuốc trước, chỉ phẫu thuật khi dùng
+                                thuốc thất bại.
+                            </p>
+
+                            <p style="text-align: right;">
+                                <a href="#" class="link-chitiet">Bệnh viện mắt Sài Gòn</a>
+                            </p>
+                            <p style="text-align: right;font-style: italic;">
+                                Ths.Bs.Nguyễn Phú Tùng
+                            </p>
+                        </div>
+                        <!-- Chia sẻ -->
+                        <div class="chia-se text-center">
+                            <h4>Chia sẻ</h4>
+                            <div class="chiase">
+                                <div class="chiase-fb">
+                                    <a href="https://www.facebook.com/login/" target="_blank">
+                                        <img src="../public/img/fb-svg.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-mess">
+                                    <a href="https://www.messenger.com/" target="_blank">
+                                        <img src="../public/img/logo-mess.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-skype">
+                                    <a href="https://login.live.com/" target="_blank">
+                                        <img src="../public/img/skype.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chia-se-email">
+                                    <a href="https://accounts.google.com/" target="_blank">
+                                        <img src="../public/img/email.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="chiase-whap-app">
+                                    <a href="https://web.whatsapp.com/" target="_blank">
+                                        <img src="../public/img/what-app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nôi dung liên quan -->
+                        <div class="noidung-lienquan">
+                            <h2>NỘI DUNG LIÊN QUAN</h2>
+                            <div class="post-content">
+                                <div class="post col-md-6">
+                                    <img src="../public/img/tham-my-3.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">
+                                            Phẫu thuật hở mi
+                                        </a>
+                                        <p>Bệnh lý giác mạc do hở mi là một trong những trường hợp phổ biến của bệnh lý
+                                            về mặt giác mạc. Cần tìm hiểu</p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post col-md-6">
+                                    <img src="../public/img/tham-my-4.png" alt="" class="img-fluid">
+                                    <div class="text-post">
+                                        <a href="">Hở mi mắt: Nguy cơ mắc phải và cách điều trị</a>
+                                        <p>Hở mi mắt có khá nhiều nguyên nhân, cách điều trị còn phụ thuộc vào tác nhân
+                                            gây bệnh </p>
+                                        <div class="xem-chi-tiet">
+                                            <a href="">Xem chi tiết >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            <div class="post col-md-6">
+                                <img src="../public/img/benh-mat-khac-15.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Bệnh võng mạc ở trẻ đẻ non</a>
+                                    <p>Bệnh võng mạc trẻ đẻ non được biết đến là một trong những nguyên nhân gây mù
+                                        lòa chính ở trẻ. Nếu không được khám</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post col-md-6">
+                                <img src="../public/img/benh-mat-khac-16.png" alt="" class="img-fluid">
+                                <div class="text-post">
+                                    <a href="">Co giật mí mắt, điềm báo hay triệu chứng bệnh về mắt</a>
+                                    <p>Nhiều người vẫn cho rằng nếu bị giật mí mắt, nháy mắt liên tục là ‘điềm
+                                        báo’ một việc gì đó bất thường mang tính</p>
+                                    <div class="xem-chi-tiet">
+                                        <a href="">Xem chi tiết >></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <h3 style="padding:0px 0px 20px 40px;">Dịch vụ</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li>
+                                        <a href="../dichvu/khammat.html">Khám mắt<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </li>
+                                    <li> <a href="../dichvu/dieutritatkhucxa.html"> Điều trị tật khúc xạ<i
+                                                class="fa-solid fa-angle-right"></i> </a> </li>
+                                    <li> <a href="../dichvu/phauthuatcuomkhophaco.html"> Phẫu thuật cườm khô Paco<i
+                                                class="fa-solid fa-angle-right"></i> </a>
+                                    </li>
+                                    <li> <a href="../dichvu/phauthuatcuomnuoc-glaucoma.html"> Phẫu thuật cườm nước
+                                            Glaucoma<i class="fa-solid fa-angle-right"></i> </a>
+                                    <li> <a href="../dichvu/nhannhi&dieutrilac.html"> Nhãn nhi điều trị lác & lé<i
+                                                class="fa-solid fa-angle-right"></i></a>
+
+                                    <li> <a href=""> Tuyển dụng </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- Hướng dẫn khách hàng -->
+                        <h3 style="padding:20px 40px;">Hướng dẫn khách hàng</h3>
+
+                        <div class="link-right">
+                            <ul>
+                                <div class="left-border">
+                                    <li> <a href="../tintuc/doi-mat-khoe.html"> Bí quyết mắt khỏe<i
+                                                class="fa-solid fa-angle-right"></i></a> </li>
+                                    <li> <a href=""> Hướng dẫn thanh toán<i class="fa-solid fa-angle-right"></i>
+                                        </a> </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-content">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <p>
+                            CÔNG TY CỔ PHẦN BỆNH VIỆN 118 TẾ BÀO GỐC AMERICAN STEM CELLS <br>
+                            Tên quốc tế AMERICAN STEM CELLS STEM CELLS 118 HOSPITAL JOIN STOCK COMPANY <br>
+                            Tên viết tắt: 118 HOSPITAL<br>
+                            Mã số thuế: 0317187597<br>
+
+                        </p>
+                        <div class="address">
+                            Địa chỉ: 106/4 Trường Chinh, Khu phố 6, Phường Tân Hưng Thuận, Quận 12, Thành
+                            phố Hồ
+                            Chí
+                            Minh, Việt Nam
+                        </div>
+                        <div class="footer-img">
+                            <img src="../public/img/bocongthuong.png" alt="" class="img-bocongthuong"
+                                style="width:170px;height:65px">
+                            <img src="../public/img/DMCA.png" alt="" class="img-dmca" style="width:150px;height:30px;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <h3>Dịch vụ </h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li><a href="../dichvu/khammat.html">Khám mắt</a></li>
+                                <li><a href="../dichvu/dieutritatkhucxa.html">Điều trị tật khúc xạ</a></li>
+                                <li><a href="../dichvu/phauthuatcuomkhophaco.html">Phẫu thuật cườm khô Phaco</a></li>
+                                <li><a href="../dichvu/phauthuatcuomnuoc-glaucoma.html">Phẫu thuật cườm nước
+                                        Glaucoma</a></li>
+                                <li><a href="../dichvu/nhannhi&dieutrilac.html">Nhãn nhi & Điều trị lác</a></li>
+                                <li><a href="../dichvu/phauthuatghepgiacmac.html">Phẫu thuật ghép giác mạc</a></li>
+                                <li><a href="../dichvu/taohinhthammy.html">Tạo hình thẩm mỹ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Về chúng tôi</h3>
+                        <div class="footer-service">
+                            <ul>
+                                <li> <a href="#">Hệ thống</a> </li>
+                                <li> <a href="#">Đội ngũ bác sĩ</a> </li>
+                                <li> <a href="../tintuc/tin-truyen-thong-1.html">Tin tức</a> </li>
+                                <li> <a href="../tintuc/tin-khuyen-mai.html">Khuyến mãi</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i>
+                                CSKH: 1800118 <br> 1900118
+                            </li>
+                            <li>
+                                <i class="fas fa-globe-americas"></i>
+                                <a href="#" id="website">
+                                    www.humanstemcell.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-follow">
+                        <div class="col-md-6">
+                            <p>Theo dõi tin tức và dịch vụ mới nhất của chúng tôi!
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-youtube"></i>
+                            </p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>Cập nhập thông tin mới nhất!</p>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group stylish-input-group">
+                                <input type="email" name="EMAIL" class="form-control" placeholder="Nhập email của bạn"
+                                    required="">
+                                <span class="input-group-addon">
+                                    <input type="submit" value="ĐĂNG KÝ!">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cross"></div>
+        <div class="note">
+            <p> &copy; Bệnh viện Mắt Sài Gòn 2020. <br>
+                Tất cả những thông tin trên chỉ mang tính chất tham khảo, bệnh nhân phải đến trực tiếp bệnh
+                viện
+                khám để bác sĩ chẩn đoán và điều trị.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
