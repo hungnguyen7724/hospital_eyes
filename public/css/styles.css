@@ -37,7 +37,7 @@
     color: white;
     padding: 12px;
     position: relative;
-    top: 35px;
+    top: 50px;
     right: 0;
     background-color: #00ac4f;
     font-weight: 500;
@@ -457,7 +457,7 @@ input.form-control {
     }
     .calendar {
         position: relative;
-        top: 30px;
+        top: 40px;
     }
 }
 @media only screen and (max-width:1530px){
