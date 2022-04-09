@@ -28,21 +28,23 @@
     width: 170px;
     height: auto;
 }
-.calendar {
-    position: relative;
-    top: 45px;
-    right: 0;
+.calendar :hover{
+    background-color: #00ac4f;
 }
-.calendar a{
+.calendar {
     box-shadow: 0px 9px 16px 0px #999;
     border-radius: 10px;
     color: white;
     padding: 12px;
-    text-decoration: none;
-    background-color: #198754;
+    position: relative;
+    top: 35px;
+    right: 0;
+    background-color: #00ac4f;
     font-weight: 500;
     font-size: 12px;
+    border: none;
 }
+
 .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
 }
@@ -283,8 +285,9 @@ input.form-control {
     padding: 30px 12px;
 }
 
-.news-contents.col-md-4  img:hover{
-    box-shadow: 0px 9px 16px 9px #999;
+.news-contents:hover{
+    box-shadow: 0px 9px 16px 0px #999;
+    
 }
 
 .news-contents a {
@@ -454,7 +457,7 @@ input.form-control {
     }
     .calendar {
         position: relative;
-        top: 40px;
+        top: 30px;
     }
 }
 @media only screen and (max-width:1530px){
@@ -472,7 +475,7 @@ input.form-control {
     }
 }
 @media only screen and (max-width: 1490px){
-    .calendar a{
+    .calendar {
       display: none;
     }
 }
@@ -776,3 +779,65 @@ input.form-control {
         display: inline-block;
     }
 }
+/* modal- dat lich kham */
+.modal-datlichkham,
+    .modal-ngaydathen {
+        display: flex;
+    }
+
+    h2#exampleModalLabel {
+        color: #00ac4f;
+    }
+
+    .modal-datlichkham {
+        padding: 20px;
+    }
+
+    .modal-datlichkham ul li {
+        padding: 20px;
+    }
+
+    .modal-datlichkham label {
+        padding: 10px 0;
+    }
+
+    .modal-header .btn-close {
+        float: right;
+        padding: 0.5rem 0.5rem;
+        margin: -0.5rem -0.5rem -0.5rem auto;
+    }
+
+    .hotline {
+        text-align: center;
+        background: #00ac4f;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .hotline img {
+        width: 50px;
+        height: auto;
+    }
+
+    .hotline a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .modal-cancle {
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: black;
+        background-color: #ebf1e7;
+        font-weight: 500;
+    }
+
+    .modal-book {
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #00ac4f;
+        font-weight: 500;
+    }
