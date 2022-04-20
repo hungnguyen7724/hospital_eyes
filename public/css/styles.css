@@ -5,8 +5,9 @@
 	float: none !important; 
     padding-top: 50px; 
  }    */
-
-
+ body{
+    font-family: 'Asap', sans-serif;
+ }
 
 .menu-header, .footer-content, .img-link, .news1, .advise-1, .advise-free,.hospital-doctor,.top-header 
 , .all-doctor, .eyes
@@ -89,6 +90,9 @@ button#dropdownMenu2 {
 .service-content {
     background: #f5f8fa;
 }
+.care img:hover{
+    opacity: 0.8;
+}
 .care{
     padding-bottom: 20px;
     padding-top: 40px;
@@ -119,15 +123,19 @@ button#dropdownMenu2 {
     background-color: #009247;
     color: white;
     padding: 10px;
-    margin: 0 50px;
+    margin: 0 60px;
+    border-radius: 10px;
+}
+.more:hover{
+    font-weight: 600;
+    color: white;
+    opacity: 0.9;
 }
 .more a{
     text-decoration: none;
     color: white;
 }
-.more a:hover{
-    color: black;
-}
+
 .care p{
     color: #6A6969;
     text-align: center;
@@ -199,7 +207,7 @@ footer{
 }
 footer li{
     list-style: none;
-    line-height: 30px;
+    line-height: 36px;
 }
 .footer-content p {
     line-height: 30px;
@@ -282,17 +290,17 @@ input.form-control {
 }
 /* news-content */
 .news-contents {
-    padding: 30px 12px;
+    padding: 12px 12px 0px 12px;
 }
-
 .news-contents:hover{
+    opacity: 0.8;
+    border-radius: 7px;
     box-shadow: 0px 9px 16px 0px #999;
-    
 }
 
 .news-contents a {
     background: white;
-    padding:10px 30px;
+    padding:20px 15px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -335,7 +343,22 @@ input.form-control {
     margin-right: 50px;
     font-weight: 700;
     border-radius: 30px;
+    border: 1px solid #00ac4f;
+
 }
+.book-now:hover{
+    border: 1px solid black;
+    background-color: #00ac4f;
+    opacity: 0.8;
+    animation-delay: 0.5s;
+}
+.get-advise:hover{
+    border: 1px solid #00ac4f;
+    color: white;
+    opacity: 0.8;
+    animation-delay: 0.5s;
+}
+
 .get-advise a{
     color: #00ac4f;
 }
@@ -345,6 +368,8 @@ input.form-control {
     background-color: white;
     font-weight: 700;
     border-radius: 30px;
+    border: 1px solid white;
+
 }
 /*  */
 .achievement {
@@ -409,6 +434,10 @@ input.form-control {
 .move img{
     width: 60px;
     height: 50px;
+}
+.input-group-addon input:hover{
+    background-color: #009247;
+    color: #1f1f1f;
 }
 
 /* Reponsive */
@@ -483,6 +512,18 @@ input.form-control {
     .img-link img, .img-link iframe{
         width: 300px;
         height: 200px;
+    }
+    .news-contents a {
+        background: white;
+        padding: 20px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 1.4;
+        color: #00ac4f;
+        text-decoration: none;
     }
     .picture-all {
         position: relative;
@@ -676,6 +717,7 @@ input.form-control {
     .care h2 {
         font-size: 20px;
     }
+
     .footer-content{
         font-size: 15px;
     }
@@ -836,8 +878,51 @@ input.form-control {
 
     .modal-book {
         color: white;
-        padding: 5px 10px;
+        padding: 5px 10px;  
         border-radius: 5px;
         background-color: #00ac4f;
         font-weight: 500;
     }
+/* 3D */
+
+.nav-indicator{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: 0.4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}
+
+.nav-item{
+    color: #83818c;
+    text-decoration: none;
+    transition:  0.3s;
+    margin: 0 7px;
+    z-index: 1;
+    position: relative;
+}
+
+.nav-item:before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: #1bb462;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-item:not(.is_active):hover:before{
+    opacity: 1;
+    bottom:0;
+}
+
+.nav-item:not(.is-active):hover{
+    color: #333;
+}
