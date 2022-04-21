@@ -15,7 +15,7 @@
     padding-left: 50px;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    padding-top: 13px;
+    padding-top: 7px;
     font-size: 18px;
 }
 .dropdown {
@@ -23,24 +23,28 @@
     margin: 5px;
 } 
 .header-img img {
-    width: 170px;
+    width: 170px !important;
     height: auto;
 }
-.calendar :hover{
+.calendar:hover{
     background-color: #00ac4f;
 }
 .calendar {
-    box-shadow: 0px 9px 16px 0px #999;
+    box-shadow: 0px 2px 6px 2px #999;
     border-radius: 10px;
     color: white;
     padding: 12px;
     position: relative;
-    top: 50px;
+    top: 35px;
     right: 0;
     background-color: #00ac4f;
     font-weight: 500;
     font-size: 12px;
     border: none;
+}
+.calendar:hover{
+    box-shadow: 0px 5px 10px 5px #999;
+    transition: all 1s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -116,7 +120,21 @@ button#dropdownMenu2 {
     color: #0D9851;
     text-align: center;
 }
+.eye-disease img{
+    height: 90px;
+    height: 100px;
+    transition: all 1s ease-in-out;
+
+}
+.eye-disease:hover img{
+    width: 140px;
+    height: auto;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 .more {
+    border: 2px solid white;
     background-color: #009247;
     color: white;
     padding: 10px;
@@ -124,9 +142,17 @@ button#dropdownMenu2 {
     border-radius: 10px;
 }
 .more:hover{
-    font-weight: 600;
-    color: white;
-    opacity: 0.9;
+    color: #1f1f1f;
+    border: 2px solid #1f1f1f;
+    background-color: #009247;
+    transition: all 0.5s ease-out;
+}
+.more a:hover{
+    font-size: 16px;
+    font-family: 600;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    transition: all 1s ease-out;
 }
 .more a{
     text-decoration: none;
@@ -174,6 +200,7 @@ button#dropdownMenu2 {
     width: 100px;
     height: 100px;
 }
+
 .right-content1 {
     padding-top: 200px;
 }
@@ -278,9 +305,18 @@ input.form-control {
     margin-right: 145px;
     text-align: center;
 }
-.picture-all a:hover, .footer-service li:hover, .footer-service  a:hover{
+.picture-all a:hover{
     color: black;
 }
+.footer-service li:hover, .footer-service  a:hover{
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+.picture-all a:hover{
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
 .picture-all a{
     text-decoration: none;
     color: white;
@@ -293,6 +329,15 @@ input.form-control {
     opacity: 0.8;
     border-radius: 7px;
     box-shadow: 0px 9px 16px 0px #999;
+}
+.news-contents img {
+    width: 100%;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+.news-contents:hover img{
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .news-contents a {
@@ -341,19 +386,18 @@ input.form-control {
     font-weight: 700;
     border-radius: 30px;
     border: 1px solid #00ac4f;
-
 }
 .book-now:hover{
     border: 1px solid black;
     background-color: #00ac4f;
-    opacity: 0.8;
-    animation-delay: 0.5s;
+    opacity: 0.7;
+    transition: all 1s ease-in-out;
 }
 .get-advise:hover{
     border: 1px solid #00ac4f;
     color: white;
-    opacity: 0.8;
-    animation-delay: 0.5s;
+    opacity: 0.7;
+    transition: all 1s ease-in-out;
 }
 
 .get-advise a{
@@ -371,6 +415,15 @@ input.form-control {
 /*  */
 .achievement {
     text-align: center;
+}
+.achievement img{
+    width: 80px;
+    height: 85px;
+    transition: all 0.5s ease-in-out;
+}
+.achievement img:hover{
+    width: 90px;
+    height: 100px;
 }
 .hospital-doctor img {
     color: #009247;
@@ -403,13 +456,21 @@ input.form-control {
 }
 .doctor-1 img{
     border-radius: 50%;
+    transition: all 1s ease-in-out;
 }
+.doctor-1 img:hover{
+    width: 260px;
+    height: 240px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .doctor{
+    padding-bottom: 30px;
     padding-top: 50px;
 }
 .doctor-1{
     background-color: #f8fdfa !important;
-    line-height: 12px;
     padding: 40px;
     text-align: center;
 }
@@ -435,6 +496,7 @@ input.form-control {
 .input-group-addon input:hover{
     background-color: #009247;
     color: #1f1f1f;
+    transition: all 1s ease-in-out;
 }
 
 /* Reponsive */
@@ -887,7 +949,7 @@ input.form-control {
     left: 0;
     bottom: 0;
     height: 4px;
-    transition: 0.4s;
+    transition: 0.4s ease-in-out;
     height: 5px;
     z-index: 1;
     border-radius: 8px 8px 0 0;
@@ -896,7 +958,7 @@ input.form-control {
 .nav-item{
     color: #83818c;
     text-decoration: none;
-    transition:  0.3s;
+    transition:  0.3s ease-in-out;
     margin: 0 7px;
     z-index: 1;
     position: relative;
@@ -912,7 +974,7 @@ input.form-control {
     background-color: #1bb462;
     border-radius: 8px 8px 0 0;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-item:not(.is_active):hover:before{
@@ -922,4 +984,15 @@ input.form-control {
 
 .nav-item:not(.is-active):hover{
     color: #333;
+}
+.xoay{
+    animation: xoay 5s linear infinite;
+}
+
+@keyframes xoay {
+    form{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
 }
