@@ -22,6 +22,10 @@
     position: relative;
     margin: 5px;
 } 
+.dropdown-item:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #00ac4f;
+}
 .header-img img {
     width: 170px !important;
     height: auto;
@@ -943,7 +947,7 @@ input.form-control {
         font-weight: 500;
     }
 /* 3D */
-
+/* menu */
 .nav-indicator{
     position: absolute;
     left: 0;
