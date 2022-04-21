@@ -7,7 +7,7 @@
     padding-left: 50px;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    padding-top: 13px;
+    padding-top: 7px;
     font-size: 17px;
     color: rgba(0,0,0,.9);
 }
@@ -66,8 +66,8 @@ h3{
 }
 .link-right li a:hover{
     color: #00ac4f;
-    border-left: 2px solid #00ac4f;
-
+    border-left: 3px solid #00ac4f;
+    transition: all 0.5s;
 }
 .link-right li{
     list-style: none;
@@ -82,7 +82,10 @@ h3{
     box-shadow: 0px 9px 16px 0px #999;
 }
 .left-border a{
-    border-left: 2px solid gray;
+    border-left: 3px solid gray;
+}
+.left-border a:hover{
+    border-left: 3px solid gray;
 }
 .gioithieuchung h3, .su-menh h3, .gia-tri h3, .tam-nhin h3, .lich-su h3{
     font-family: 'Asap', sans-serif;
@@ -164,9 +167,6 @@ input.form-control {
 .footer-content{
     display: flex;
 }
-.footer-service  a:hover{
-    color: black;
-}
 
 /* dichvu - khám mắt */
 .post.col-md-6{
@@ -206,10 +206,18 @@ input.form-control {
 .post-content .post img{
     width: 422px;
     height: 228px;
-}
+    transition: all 0.3s ease-in-out;
 
+}
+.post-content .post img:hover{
+    width: 430px;
+    height: 228px;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 .post-content .post{
     margin: 10px;
+    overflow: hidden;
 }
 .post col-md-6{
     display: flex;
@@ -556,4 +564,53 @@ textarea#text-lienhe {
 }
 .post-chitiet h4{
     margin: 20px 0;
+}
+
+/* 3D */
+
+
+.nav-indicator{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: 0.4s ease-in-out;
+    height: 5px;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}
+
+.nav-item{
+    color: #83818c;
+    text-decoration: none;
+    transition:  0.3s ease-in-out;
+    margin: 0 7px;
+    z-index: 1;
+    position: relative;
+}
+
+.nav-item:before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: #1bb462;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item:not(.is_active):hover:before{
+    opacity: 1;
+    bottom:0;
+}
+
+.nav-item:not(.is-active):hover{
+    color: #333;
+}
+.footer-service li:hover, .footer-service  a:hover{
+    color: black;
+    transition: all 0.5s ease-in-out;
 }
